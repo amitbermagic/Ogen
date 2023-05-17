@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="13021"/>
+    <Version val="14090.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -13,7 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header ISN_2="1" LastIsn="1" id="5">
+        <Header Description="שינוי" ISN_2="1" LastIsn="1" id="5">
+          <LastModified _date="738657" _time="44917" date="17/05/2023" time="12:28:37"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -27,7 +28,6 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified date="00/00/0000" time="00:00:00"/>
         </Header>
         <Resource>
           <Columns/>
@@ -99,9 +99,7 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
-            <Expanded val="1"/>
             <LogicLines>
               <LogicLine>
                 <DATAVIEW_SRC FlowIsn="2" Type="M">
@@ -121,9 +119,7 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
-            <Expanded val="1"/>
           </LogicUnit>
           <LogicUnit id="4" propagate="78">
             <Level val="T"/>
@@ -134,9 +130,7 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
-            <Expanded val="1"/>
           </LogicUnit>
           <LogicUnit id="5" propagate="78">
             <Level val="R"/>
@@ -147,9 +141,7 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
-            <Expanded val="1"/>
           </LogicUnit>
           <LogicUnit id="6" propagate="78">
             <Level val="R"/>
@@ -160,16 +152,14 @@
             <Condition val="89"/>
             <Event>
               <EventType val="S"/>
-              <PublicObject comp="-1"/>
             </Event>
-            <Expanded val="1"/>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
           <FormEntry id="1">
             <PropertyList model="FORM_GUI0">
               <_Comment id="218"/>
-              <FormName id="311"/>
+              <FormName id="311" valUnicode="שינוי"/>
               <_TabbingOrder id="318" val="2"/>
               <WindowType id="358" val="1"/>
               <PersistentFormState id="493"/>
