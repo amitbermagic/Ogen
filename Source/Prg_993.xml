@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="שליחת הודעת VOI באמצעות INFORU" ISN_2="1" LastIsn="1" id="993">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr MgAttr="O"/>
+            <TSK_PARAMS val="3"/>
+            <ParametersAttributes>
+              <Attr MgAttr="O"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="N"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="Y"/>
+          <LastModified _date="737790" _time="37171" date="31/12/2020" time="10:19:31"/>
+        </Header>
+        <ReturnValueExpression val="2"/>
+        <ItemIsn val="4"/>
+        <Resource>
+          <Columns>
+            <Column id="1" name="XML Message Blob">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <StoredAs id="173" val="33"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="3" name="מספר טלפון נמען">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="15"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="15"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="4" name="מזהה הודעה">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="9"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="9"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="Response">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <StoredAs id="173" val="34"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="1"/>
+                <Content id="434" val="2"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="A"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="N"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="N"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="1" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="1" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="10" id="3">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4" FlowIsn="17" id="4">
+                  <Column val="4"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="7" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="T"/>
+            <Type val="P"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="14">
+                  <FieldID val="3"/>
+                  <WithValue val="3"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="5">
+                  <FieldID val="1"/>
+                  <WithValue val="1"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="R"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Invoke FlowIsn="22">
+                  <OperationType val="."/>
+                  <TaskID comp="-1"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="2"/>
+                      <Skip val="N"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Parent val="32768"/>
+                      <Variable val="134"/>
+                      <Skip val="N"/>
+                      <Name val="userName"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Parent val="32768"/>
+                      <Variable val="135"/>
+                      <Skip val="N"/>
+                      <Name val="token"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Parent val="32768"/>
+                      <Variable val="140"/>
+                      <Skip val="N"/>
+                      <Name val="serviceURL"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                      <Name val="textToSpeach"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3"/>
+                      <Skip val="N"/>
+                      <Name val="phone"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="6"/>
+                      <Skip val="N"/>
+                      <Name val="customerMessageID"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <ReturnValue val="4"/>
+                  <FunctionName val="func"/>
+                  <SnippetCode val="using System;&#xA;using System.Collections.Generic;&#xA;using System.IO;&#xA;using System.Linq;&#xA;using System.Net;&#xA;using System.Text;&#xA;using System.Threading.Tasks;&#xA;using System.Web.Script.Serialization;&#xA;&#xA;public static class Snippet&#xA;{&#xA;&#x9;public static System.String func(System.String userName, System.String token, System.String serviceURL, System.String textToSpeach, System.String phone, System.String customerMessageID)&#xA;&#x9;{&#xA;&#x9;&#x9;List&lt;Message> MessagetList = new List&lt;Message>();&#xA;&#xA;&#x9;&#x9;/*&#xA;&#x9;&#x9;MessagetList.Add(new Message&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;TextToSpeech = &quot;Hello World&quot;,&#xA;&#x9;&#x9;&#x9;Phone = &quot;0526311757&quot;,&#xA;&#x9;&#x9;&#x9;CustomerMessageID = &quot;123&quot;&#xA;&#x9;&#x9;});&#xA;&#x9;&#x9;*/&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;MessagetList.Add(new Message&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;TextToSpeech = textToSpeach,&#xA;&#x9;&#x9;&#x9;Phone = phone,&#xA;&#x9;&#x9;&#x9;CustomerMessageID = customerMessageID&#xA;&#x9;&#x9;});&#xA;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;string Response = SendTextToSpeech(serviceURL, userName, token, MessagetList);&#xA;&#x9;&#x9;return Response;&#xA;&#x9;&#x9;&#xA;&#x9;}&#xA;        public class Message&#xA;        {&#xA;            public string TextToSpeech { get; set; }&#xA;            public string Phone { get; set; }&#xA;            public string CustomerMessageID { get; set; }&#xA;        }&#xA;        public class requestBody&#xA;        {&#xA;            public Data Data { get; set; }&#xA;        }&#xA;        public class Data&#xA;        {&#xA;            public Message[] List { get; set; }&#xA;        }&#xA;        private static string SendTextToSpeech(string serviceURL, string UserName, string Token, List&lt;Message> MessagetList)&#xA;        {&#xA;         &#x9;ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 | SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;&#xA;&#x9;&#x9;&#x9;string responseBody = string.Empty;&#xA;            //string Url = &quot;https://capi.inforu.co.il/api/v2/Voice/Message/Send&quot;;&#xA;&#x9;&#x9;&#x9;string Url = serviceURL;&#xA;            requestBody re = new requestBody();&#xA;            re.Data = new Data();&#xA;&#x9;&#x9;&#x9;re.Data.List = MessagetList.ToArray();&#xA;&#x9;        var json = string.Empty;&#xA;            try&#xA;            {&#xA;                json = new JavaScriptSerializer().Serialize(re);&#xA;            }&#xA;            catch (Exception ex)&#xA;            {&#xA;                //responseBody = &quot;Failed&quot;;&#xA;&#x9;&#x9;&#x9;&#x9;responseBody = ex.Message;&#xA;                return responseBody;&#xA;            }&#xA;            string requestBody = json.ToString();&#xA;            //Setup the web request&#xA;            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url);&#xA;            request.Timeout = 30000;&#xA;            request.Method = &quot;POST&quot;;&#xA;            request.ContentType = &quot;application/json&quot;;&#xA;            // Set Authorization&#xA;            string basicAuthorizationString = UserName + &quot;:&quot; + Token;&#xA;            request.Headers.Add(&quot;Authorization&quot;, &quot;Basic &quot; + System.Convert.ToBase64String(Encoding.UTF8.GetBytes(basicAuthorizationString)));&#xA;            //Set the POST data in a buffer&#xA;            byte[] postBuffer = Encoding.UTF8.GetBytes(requestBody);&#xA;            //Specify the length of the buffer&#xA;            request.ContentLength = postBuffer.Length;&#xA;            //Open up a request stream&#xA;            Stream requestStream = request.GetRequestStream();&#xA;            //Write the POST data&#xA;            requestStream.Write(postBuffer, 0, postBuffer.Length);&#xA;            //Close the stream&#xA;            requestStream.Close();&#xA;            request.PreAuthenticate = true;&#xA;            try&#xA;            {&#xA;                //Create the Response object&#xA;                HttpWebResponse response;&#xA;                try&#xA;                {&#xA;                    response = (HttpWebResponse)request.GetResponse();&#xA;                }&#xA;                catch (WebException e)&#xA;                {&#xA;                    response = (HttpWebResponse)e.Response;&#xA;                }&#xA;                HttpStatusCode status = response.StatusCode;&#xA;                if (status != HttpStatusCode.OK)&#xA;                {&#xA;                    // Raise error&#xA;                }&#xA;                //Create the reader for the response&#xA;                StreamReader sr = new StreamReader(response.GetResponseStream(), Encoding.UTF8);&#xA;                //Read the response&#xA;                responseBody = sr.ReadToEnd();&#xA;                //Close the reader, and response&#xA;                sr.Close();&#xA;                response.Close();&#xA;&#x9;            }&#xA;            catch (Exception ex)&#xA;            {&#xA;                String exception =ex.Message;&#xA;&#x9;&#x9;&#x9;&#x9;//Raise&#xA;            }&#xA;            return responseBody;&#xA;        }&#xA;&#xA;}"/>
+                  <CompiledCode val="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bWVyTWVzc2FnZUlEAC5jdG9yADxUZXh0VG9TcGVlY2g+a19fQmFja2luZ0ZpZWxkADxQaG9uZT5rX19CYWNraW5nRmllbGQAPEN1c3RvbWVyTWVzc2FnZUlEPmtfX0JhY2tpbmdGaWVsZABUZXh0VG9TcGVlY2gAUGhvbmUAQ3VzdG9tZXJNZXNzYWdlSUQAZ2V0X0RhdGEAc2V0X0RhdGEAPERhdGE+a19fQmFja2luZ0ZpZWxkAGdldF9MaXN0AHNldF9MaXN0ADxMaXN0PmtfX0JhY2tpbmdGaWVsZABMaXN0AHVzZXJOYW1lAHRva2VuAHNlcnZpY2VVUkwAdGV4dFRvU3BlYWNoAHBob25lAGN1c3RvbWVyTWVzc2FnZUlEAFVzZXJOYW1lAFRva2VuAE1lc3NhZ2V0TGlzdAB2YWx1ZQBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzAENvbXBpbGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAYTJha3Vic3oAQWRkAFN5c3RlbS5OZXQAU2VydmljZVBvaW50TWFuYWdlcgBTZWN1cml0eVByb3RvY29sVHlwZQBzZXRfU2VjdXJpdHlQcm90b2NvbABTdHJpbmcARW1wdHkAVG9BcnJheQBTeXN0ZW0uV2ViLkV4dGVuc2lvbnMAU3lzdGVtLldlYi5TY3JpcHQuU2VyaWFsaXphdGlvbgBKYXZhU2NyaXB0U2VyaWFsaXplcgBTZXJpYWxpemUARXhjZXB0aW9uAGdldF9NZXNzYWdlAFRvU3RyaW5nAFdlYlJlcXVlc3QAQ3JlYXRlAEh0dHBXZWJSZXF1ZXN0AHNldF9UaW1lb3V0AHNldF9NZXRob2QAc2V0X0NvbnRlbnRUeXBlAENvbmNhdABXZWJIZWFkZXJDb2xsZWN0aW9uAGdldF9IZWFkZXJzAFN5c3RlbS5UZXh0AEVuY29kaW5nAGdldF9VVEY4AEdldEJ5dGVzAENvbnZlcnQAVG9CYXNlNjRTdHJpbmcAU3lzdGVtLkNvbGxlY3Rpb25zLlNwZWNpYWxpemVkAE5hbWVWYWx1ZUNvbGxlY3Rpb24Ac2V0X0NvbnRlbnRMZW5ndGgAU3lzdGVtLklPAFN0cmVh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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAMAAAA8D4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+                  <SnippetLanguage val="C"/>
+                  <ForCompactFramework val="N"/>
+                  <isGuiThreadExecution val="Y"/>
+                  <CompileTime HighDateTime="30859085" LowDateTime="2820497040"/>
+                  <AssemblyIds val="-279589575,-1937260129,"/>
+                  <RetainFocus val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="23" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry id="1">
+            <PropertyList model="FORM_GUI0">
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="שליחת הודעת SMS באמצעות INFORU"/>
+            </PropertyList>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="'גביית ההחזר החודשי של ההלוואה מעוגן נכשלה עקב אכ&quot;מ.&#xD;&#xA;פניה נוספת לבנק תתבצע בתאריך 00/00/0000.&#xD;&#xA;לברור יש לפנות במייל: collection@ogen.org &#xD;&#xA;או WhatsApp: 052-6977246&#xD;&#xA;ראה מכתב מצורף – https://apitest.ogen.org/FetchDocumet?3sRj0MaB.'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="6">
+            <ExpSyntax val="Trim(Str({0,4},''))&amp;IF({32768,49},'_I','_N')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3">
+            <ExpSyntax val="'0542118892'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="{0,2}"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+        </Expressions>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

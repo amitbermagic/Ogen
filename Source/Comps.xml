@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14090.00"/>
+    <WithIsn val="Y"/>
+    <Exe comp="-1"/>
+    <LastIsn val="40"/>
+    <LastIsnFolder val="0"/>
+  </Header>
+
+  <ComponentsRepository>
+    <Components>
+      <Component id="1" name="UserFunctionality">
+        <Description val="Handles the Range, Locate, Sort and Print Data internal events"/>
+        <ComponentType val="Magic xpa"/>
+        <Type val="U"/>
+        <LoadImmediate val="Y"/>
+        <Comment val="This component provides an interface for the user to perform Range, Locate, Sort and Print Data.The component does not expose any object. It has logic units for handling the Range, Locate, Sort and Print Data internal events.The source code for this component is available in the Add_On\UserFunctionality directory, so you can customize the screens of the component as you wish."/>
+        <CompId val="738976342-28670-18720-BFE77D42E"/>
+        <MciFile val="C:\AGUDA\Add_On\UserFunctionality\UserFunctionality.eci"/>
+        <CABINET_FILE val="%EngineDir%Add_On\UserFunctionality\UserFunctionality.ecf"/>
+      </Component>
+      <Component id="3" name="CheckBoxComboBox">
+        <Description val="CheckBoxComboBox"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+        <AssemblyPath val="%DotNetComponents%CheckBoxComboBox.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="5" name="System.Windows.Forms">
+        <Description val="System.Windows.Forms"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="6" name="Microsoft.Office.Interop.Word">
+        <Description val="Microsoft.Office.Interop.Word"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"/>
+        <AssemblyPath val="C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Word\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Word.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="7" name="System.Reflection">
+        <Description val="System.Reflection"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Reflection\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Reflection.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="8" name="System">
+        <Description val="System"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="10" name="itextsharp">
+        <Description val="itextsharp"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="itextsharp, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca"/>
+        <AssemblyPath val="%DotNetComponents%itextsharp.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="11" name="itextsharp.pdfa">
+        <Description val="itextsharp.pdfa"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="itextsharp.pdfa, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca"/>
+        <AssemblyPath val="%DotNetComponents%itextsharp.pdfa.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="12" name="itextsharp.xtra">
+        <Description val="itextsharp.xtra"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="itextsharp.xtra, Version=5.4.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca"/>
+        <AssemblyPath val="%DotNetComponents%itextsharp.xtra.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="13" name="PdfSharp">
+        <Description val="PdfSharp"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="PdfSharp, Version=1.32.2608.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb"/>
+        <AssemblyPath val="%DotNetComponents%PdfSharp.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="22" name="System.Data">
+        <Description val="System.Data"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="24" name="System.Data.DataSetExtensions">
+        <Description val="System.Data.DataSetExtensions"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="25" name="HtmlAgilityPack">
+        <Description val="HtmlAgilityPack"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="HtmlAgilityPack, Version=1.11.24.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a"/>
+        <AssemblyPath val="%DotNetComponents%HtmlAgilityPack.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="26" name="Microsoft.VisualBasic">
+        <Description val="Microsoft.VisualBasic"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="Microsoft.VisualBasic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="27" name="System.Linq">
+        <Description val="System.Linq"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Linq\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Linq.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="28" name="System.Core">
+        <Description val="System.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="29" name="AuditTracer">
+        <Description val="Audit Tracer for Magic Applications"/>
+        <ComponentType val="Magic xpa"/>
+        <Type val="U"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <CompId val="2429906667-7753-16761-A42E63F4B"/>
+        <Revision val="3.1"/>
+        <MciFile val="M:\Magic\Projects\Ogen\Components\AuditTracer\AuditTracer.eci"/>
+        <CABINET_FILE val="%LOG_APP_NAME%"/>
+        <ComponentModels>
+          <Object>
+            <id val="2"/>
+            <ItemIsn val="1"/>
+            <PublicName val="VariableIndex"/>
+          </Object>
+          <Object>
+            <id val="3"/>
+            <ItemIsn val="2"/>
+            <PublicName val="VariablesVector"/>
+          </Object>
+          <Object>
+            <id val="4"/>
+            <ItemIsn val="3"/>
+            <PublicName val="FieldTypeToCheck"/>
+          </Object>
+          <Object>
+            <id val="5"/>
+            <ItemIsn val="4"/>
+            <PublicName val="LogType"/>
+          </Object>
+          <Object>
+            <id val="6"/>
+            <ItemIsn val="5"/>
+            <PublicName val="FolderFilesListVector"/>
+          </Object>
+          <Object>
+            <id val="7"/>
+            <ItemIsn val="6"/>
+            <PublicName val="FolderFileName"/>
+          </Object>
+          <Object>
+            <id val="8"/>
+            <ItemIsn val="7"/>
+            <PublicName val="EncryptionMethod"/>
+          </Object>
+        </ComponentModels>
+        <ComponentDataObjects>
+          <Object>
+            <id val="4"/>
+            <ItemIsn val="8"/>
+            <PublicName val="LOG HEADERS"/>
+          </Object>
+          <Object>
+            <id val="5"/>
+            <ItemIsn val="9"/>
+            <PublicName val="LOG REFERENCES"/>
+          </Object>
+          <Object>
+            <id val="6"/>
+            <ItemIsn val="10"/>
+            <PublicName val="LOG FIELDS"/>
+          </Object>
+          <Object>
+            <id val="8"/>
+            <ItemIsn val="11"/>
+            <PublicName val="V_LOG_HEADERS_LISTS"/>
+          </Object>
+          <Object>
+            <id val="9"/>
+            <ItemIsn val="12"/>
+            <PublicName val="V_LOG_REFERENCES_LISTS"/>
+          </Object>
+          <Object>
+            <id val="10"/>
+            <ItemIsn val="13"/>
+            <PublicName val="V_LOG_FIELDS_LISTS"/>
+          </Object>
+          <Object>
+            <id val="11"/>
+            <ItemIsn val="14"/>
+            <PublicName val="V_LOG_FIELDS_QUERY"/>
+          </Object>
+        </ComponentDataObjects>
+        <ComponentPrograms>
+          <Object>
+            <id val="2"/>
+            <ItemIsn val="15"/>
+            <PublicName val="CheckLogProgram"/>
+          </Object>
+          <Object>
+            <id val="3"/>
+            <ItemIsn val="16"/>
+            <PublicName val="Version"/>
+          </Object>
+          <Object>
+            <id val="4"/>
+            <ItemIsn val="17"/>
+            <PublicName val="LogBlobToDB"/>
+          </Object>
+          <Object>
+            <id val="5"/>
+            <ItemIsn val="18"/>
+            <PublicName val="LogBlobTableToDB"/>
+          </Object>
+          <Object>
+            <id val="6"/>
+            <ItemIsn val="19"/>
+            <PublicName val="LogFileToDB"/>
+          </Object>
+          <Object>
+            <id val="7"/>
+            <ItemIsn val="20"/>
+            <PublicName val="LogFolderToDB"/>
+          </Object>
+          <Object>
+            <id val="9"/>
+            <ItemIsn val="21"/>
+            <PublicName val="LogToDBScreen"/>
+          </Object>
+          <Object>
+            <id val="10"/>
+            <ItemIsn val="22"/>
+            <PublicName val="LogTimer"/>
+          </Object>
+          <Object>
+            <id val="11"/>
+            <ItemIsn val="23"/>
+            <PublicName val="EncryptDecryptBlob"/>
+          </Object>
+          <Object>
+            <id val="12"/>
+            <ItemIsn val="24"/>
+            <PublicName val="EncryptDecryptFile"/>
+          </Object>
+          <Object>
+            <id val="13"/>
+            <ItemIsn val="25"/>
+            <PublicName val="LogQuery"/>
+          </Object>
+          <Object>
+            <id val="19"/>
+            <ItemIsn val="26"/>
+            <PublicName val="Control Report"/>
+          </Object>
+          <Object>
+            <id val="30"/>
+            <ItemIsn val="27"/>
+            <PublicName val="User PRG RNG-Save Fields Data"/>
+          </Object>
+          <Object>
+            <id val="31"/>
+            <ItemIsn val="28"/>
+            <PublicName val="User PRG RNG-Load Fields Data"/>
+          </Object>
+          <Object>
+            <id val="32"/>
+            <ItemIsn val="29"/>
+            <PublicName val="Select User PRG Range"/>
+          </Object>
+          <Object>
+            <id val="34"/>
+            <ItemIsn val="30"/>
+            <PublicName val="DateCalculator"/>
+          </Object>
+          <Object>
+            <id val="35"/>
+            <ItemIsn val="31"/>
+            <PublicName val="DateCalculator_OL"/>
+          </Object>
+        </ComponentPrograms>
+      </Component>
+      <Component id="30" name="System.Web">
+        <Description val="System.Web"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <AssemblyName val="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="31" name="System.Web.Extensions">
+        <Description val="System.Web.Extensions"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <AssemblyName val="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Web.Extensions\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.Extensions.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="32" name="Microsoft.Office.Interop.Excel">
+        <Description val="Microsoft.Office.Interop.Excel"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <AssemblyName val="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"/>
+        <AssemblyPath val="C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="33" name="System.IO">
+        <Description val="System.IO"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <AssemblyName val="System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.IO\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.IO.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="36" name="ChromePdfViewer">
+        <Description val="ChromePdfViewer"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <AssemblyName val="ChromePdfViewer, Version=0.5.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0"/>
+        <AssemblyPath val="%DotNetComponents%ChromePdfViewer.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="38" name="CefSharp">
+        <Description val="CefSharp"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <AssemblyName val="CefSharp, Version=85.3.130.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138"/>
+        <AssemblyPath val="%DotNetComponents%ChromeComponent\CefSharp.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="39" name="CefSharp.Core">
+        <Description val="CefSharp.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <AssemblyName val="CefSharp.Core, Version=85.3.130.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138"/>
+        <AssemblyPath val="%DotNetComponents%ChromeComponent\CefSharp.Core.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="40" name="CefSharp.WinForms">
+        <Description val="CefSharp.WinForms"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="31"/>
+        <AssemblyName val="CefSharp.WinForms, Version=85.3.130.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138"/>
+        <AssemblyPath val="%DotNetComponents%ChromeComponent\CefSharp.WinForms.dll"/>
+        <UseSpecificVersion val="Y"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+    </Components>
+  </ComponentsRepository>
+
+</Application>

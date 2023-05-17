@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="סימון ערכים בקומבו" ISN_2="1" LastIsn="1" id="933">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <TSK_PARAMS val="2"/>
+            <ParametersAttributes>
+              <Attr DNType="PresentationControls.CheckBoxComboBox" MgAttr="O"/>
+              <Attr MgAttr="U"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="M"/>
+          <DotNetObjectExists val="Y"/>
+          <LastModified _date="737757" _time="58498" date="28/11/2020" time="16:14:58"/>
+        </Header>
+        <ItemIsn val="2"/>
+        <Resource>
+          <Columns>
+            <Column id="1" name="פ_פקד קומבו רב בחירתי">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="5"/>
+                <ObjectType id="478" val="PresentationControls.CheckBoxComboBox"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="מחרוזת ערכיKOD לסימון בקומבו">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_UNICODE" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <Size id="174" val="2000"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="A"/>
+            <LockingStrategy val="I"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="N"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="N"/>
+            <AllowDelete val="N"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="N"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="N"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="N"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="2" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="4" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="5">
+                  <Type val="1"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="6">
+                  <Type val="1"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="T"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Invoke FlowIsn="7">
+                  <OperationType val="."/>
+                  <TaskID comp="-1"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Skip val="N"/>
+                      <DotNetType val="void"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                      <Name val="CB"/>
+                      <VT_Type val="4"/>
+                      <DotNetType val="PresentationControls.CheckBoxComboBox"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="1"/>
+                      <Skip val="N"/>
+                      <Name val="CodesList"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <FunctionName val="func"/>
+                  <SnippetCode val="using System;&#xA;using System.Collections.Generic;&#xA;using System.ComponentModel;&#xA;using System.Data;&#xA;using System.Drawing;&#xA;using System.Text;&#xA;using System.Windows.Forms;&#xA;using PresentationControls; &#xA;&#xA;public static class Snippet&#xA;{&#xA;&#x9;public static void func(ref PresentationControls.CheckBoxComboBox CB, System.String CodesList)&#xA;&#x9;{&#xA;&#x9;&#x9;ObjectSelectionWrapper&lt;DataRow> row;&#xA;&#x9;&#x9;char[] delimiterChars = {','};&#xA;&#x9;&#x9;string[] CodesListArr = CodesList.Split(delimiterChars);&#xA;&#x9;&#x9; for (int i = 0; i &lt; CB.CheckBoxItems.Count; i++)&#xA;            {&#xA;&#x9;&#x9;&#x9;&#x9;row = (ObjectSelectionWrapper&lt;DataRow>)CB.CheckBoxItems[i].ComboBoxItem;&#xA;&#x9;&#x9;&#x9;&#x9; foreach (string Code in CodesListArr)&#xA;                 {&#xA;                     if(row.Item.ItemArray[0].ToString() == Code)&#xA;&#x9;&#x9;&#x9;&#x9;       {&#xA;&#x9;&#x9;&#x9;              CB.CheckBoxItems[i].Checked = true;&#xA;&#x9;&#x9;&#x9;&#x9;          //MessageBox.Show(row.Item.ItemArray[0].ToString());&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;       }&#xA;                 }&#xA;        &#xA;&#x9;&#x9;&#x9;}&#xA;    }&#xA;}"/>
+                  <CompiledCode val="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aQBvAG4AAAAwAC4AMAAuADAALgAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAwAAADgNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/>
+                  <SnippetLanguage val="C"/>
+                  <ForCompactFramework val="N"/>
+                  <isGuiThreadExecution val="Y"/>
+                  <CompileTime HighDateTime="30852496" LowDateTime="3569061148"/>
+                  <AssemblyIds val="531802072,932965495,-812272197,"/>
+                  <RetainFocus val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry id="1">
+            <PropertyList model="FORM_GUI0">
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="צור מחרוזת מבחירת ערכים מקומבו"/>
+            </PropertyList>
+          </FormEntry>
+        </TaskForms>
+        <TaskForms>
+          <FormEntry _last_isn="1" _last_test_id="6" id="2">
+            <PropertyList model="FORM_RICH_CLIENT">
+              <X id="21" val="453"/>
+              <Y id="22" val="31"/>
+              <Width id="23" val="498"/>
+              <Height id="24" val="198"/>
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="מילוי ערכים לקומבו-פעיל"/>
+            </PropertyList>
+            <Control PDOD="128" _test_id="6" id="1">
+              <PropertyList model="CTRL_GUI0_DOTNET">
+                <X id="21" val="58"/>
+                <Y id="22" val="7"/>
+                <Width id="23" val="154"/>
+                <Height id="24" val="118"/>
+                <ControlName id="46" val="פ_פקד קומבו רב בחירתי"/>
+                <TabOrder id="314" val="1"/>
+                <ObjectProperties id="479">
+                  <PropertyList model="GENERIC"/>
+                </ObjectProperties>
+                <DotnetObject FieldID="1" id="546"/>
+                <DataviewcontrolFields id="657"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="Trim({0,2})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+        </Expressions>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

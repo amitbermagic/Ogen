@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="מיזוג לוורד DNET" ISN_2="1" LastIsn="1" id="1037">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <TSK_PARAMS val="8"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="U"/>
+              <Attr MgAttr="B"/>
+              <Attr MgAttr="B"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="B"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="Y"/>
+          <LastModified _date="738375" _time="53158" date="08/08/2022" time="14:45:58"/>
+        </Header>
+        <ItemIsn val="15"/>
+        <Resource>
+          <Columns>
+            <Column id="1" name="קובץ מסמך תבנית">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="קובץ מקור הנתונים">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3" name="מחרוזת שאילתא">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="5000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="5000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="4" name="קובץ מסמך יעד">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_UNICODE" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <Size id="174" val="2000"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="10" name="פ-אל תפתח מסמך בסיום המיזוג">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="11" name="פ-שמור כ-PDF">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="13" name="פח:הודעת שגיאה">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000H"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="14" name="פא:debug">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="15" name="הודעת שגיאה">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000H"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="8" name="SHELL">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="3"/>
+                <SubObjectName id="277"/>
+                <TypeLibrary GUID="{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}" MAJOR="1" id="281" name="Microsoft Shell Controls And Automation (Ver 1.0)"/>
+                <ObjectName CanCreate="1" GUID="{13709620-C279-11CE-A49E-444553540000}" id="282" name="Shell"/>
+                <_COMLicenseKey id="291"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="A"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="N"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="Y"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="2" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="4" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="5" id="3">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4" FlowIsn="6" id="4">
+                  <Column val="4"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="10" FlowIsn="54" id="10">
+                  <Column val="10"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="11" FlowIsn="81" id="11">
+                  <Column val="11"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="13" FlowIsn="283" id="13">
+                  <Column val="13"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="14" FlowIsn="284" id="14">
+                  <Column val="14"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="15" FlowIsn="361" id="15">
+                  <Column val="15"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="8" FlowIsn="10" id="8">
+                  <Column val="8"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="T"/>
+            <Type val="P"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="337">
+                  <FieldID val="1"/>
+                  <WithValue val="30"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="338">
+                  <FieldID val="2"/>
+                  <WithValue val="31"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="339">
+                  <FieldID val="4"/>
+                  <WithValue val="33"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="340">
+                  <FieldID val="11"/>
+                  <WithValue val="34"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Disabled val="1"/>
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="399" EndBlockSegment="399" FlowIsn="398" Type="I">
+                  <Condition Exp="37"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="Y" Exp="38" FlowIsn="382" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="S">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="Y" Exp="39" FlowIsn="400" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="S">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="Y" Exp="40" FlowIsn="401" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="S">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="399"/>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="24" FlowIsn="181" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="25"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="27" FlowIsn="226" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="28"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="R"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Invoke FlowIsn="328">
+                  <OperationType val="."/>
+                  <TaskID comp="-1"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="15"/>
+                      <Skip val="N"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="1"/>
+                      <Skip val="N"/>
+                      <Name val="TemplateDocumentPath"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="2"/>
+                      <Skip val="N"/>
+                      <Name val="DataSourceFilePath"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="4"/>
+                      <Skip val="N"/>
+                      <Name val="DestinationDocumentPath"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="11"/>
+                      <Skip val="N"/>
+                      <Name val="saveAsPDF"/>
+                      <DotNetType val="System.Boolean"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <ReturnValue val="9"/>
+                  <FunctionName val="func"/>
+                  <SnippetCode val="using System;&#xA;using System.IO;&#xA;&#xA;public static class Snippet&#xA;{&#xA;&#x9;public static System.String func(System.String TemplateDocumentPath, System.String DataSourceFilePath, System.String DestinationDocumentPath, System.Boolean saveAsPDF)&#xA;&#x9;{&#xA;&#x9;&#x9;    Microsoft.Office.Interop.Word.Application oWord = new Microsoft.Office.Interop.Word.Application();&#xA;            Microsoft.Office.Interop.Word.Document oWordDoc = new Microsoft.Office.Interop.Word.Document();&#xA;&#x9;&#x9;&#xA;            try&#xA;            {&#xA;                string DestinationFileExtention = Path.GetExtension(DestinationDocumentPath);&#xA;                Object oMissing = System.Reflection.Missing.Value;&#xA;                Object oTrue = true;&#xA;                Object oFalse = false;&#xA;&#xA;                oWord.DisplayAlerts = Microsoft.Office.Interop.Word.WdAlertLevel.wdAlertsAll;&#xA;                oWord.Visible = false;&#xA;                Object oTemplatePath = TemplateDocumentPath;&#xA;                oWord.DisplayAlerts = 0;&#xA;&#x9;&#x9;&#x9;&#x9;LogToFile(&quot;TemplateFilePath: &quot;+ TemplateDocumentPath);&#xA;&#x9;&#x9;&#x9;&#x9;LogToFile(&quot;ObjectTemplateFilePath: &quot;+ oTemplatePath);&#xA;                oWordDoc = oWord.Documents.Open(ref oTemplatePath, ref oMissing, ref oMissing, ref oMissing);&#xA;                oWord.ActiveDocument.MailMerge.MainDocumentType = 0;&#xA;                oWord.ActiveDocument.MailMerge.OpenDataSource(DataSourceFilePath,oMissing,oMissing,oMissing,oMissing,oMissing,oMissing,oMissing,oMissing,oMissing,oMissing,oMissing,&quot;SELECT * FROM `Table`&quot;,oMissing,oMissing,oMissing);&#xA;                oWord.ActiveDocument.MailMerge.Destination = 0;&#xA;                oWord.ActiveDocument.MailMerge.Execute();&#xA;                ((Microsoft.Office.Interop.Word._Document)oWordDoc).Close(false);    &#xA;                if (DestinationFileExtention.ToUpper() == &quot;.DOC&quot; || DestinationFileExtention.ToUpper() == &quot;.DOCX&quot;)&#xA;                {&#xA;                    oWord.ActiveDocument.SaveAs2(DestinationDocumentPath);&#xA;                }&#xA;                else if (DestinationFileExtention.ToUpper() == &quot;.PDF&quot;)&#xA;                {&#xA;                    oWord.ActiveDocument.ExportAsFixedFormat(DestinationDocumentPath, Microsoft.Office.Interop.Word.WdExportFormat.wdExportFormatPDF, false, 0);&#xA;                }&#xA;                else if (DestinationFileExtention.ToUpper() == &quot;.HTM&quot; || DestinationFileExtention.ToUpper() == &quot;.HTML&quot;)&#xA;                {&#xA;                    oWord.ActiveDocument.SaveAs2(DestinationDocumentPath, 8);&#xA;                }&#xA;            }&#xA;            catch (Exception ex)&#xA;            {&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;((Microsoft.Office.Interop.Word._Application)oWord).Quit(true);&#xA;&#x9;&#x9;&#x9;&#x9;LogToFile(ex.Message+&quot; &quot;+ ex.InnerException);&#xA;                return ex.Message+&quot; &quot;+ ex.InnerException;&#xA;            }&#xA;            ((Microsoft.Office.Interop.Word._Application)oWord).Quit(true);&#xA;&#x9;&#x9;&#x9;&#xA;&#xA;            return &quot;OK&quot;;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;public static void LogToFile (string text)&#xA;    {&#xA;        using (StreamWriter w = File.AppendText(@&quot;c:\temp\wordmerge.log&quot;))&#xA;            {&#xA;                Log(text, w);&#xA;            }&#xA;        &#xA;    }&#xA;&#x9;&#xA;&#x9;public static void Log(string logMessage, TextWriter txtWriter)&#xA;    {&#xA;        &#xA;            txtWriter.Write(&quot;\r\nLog Entry : &quot;);&#xA;            txtWriter.WriteLine(&quot;{0} {1}&quot;, DateTime.Now.ToLongTimeString(),&#xA;                DateTime.Now.ToLongDateString());&#xA;            txtWriter.WriteLine(&quot;  :&quot;);&#xA;            txtWriter.WriteLine(&quot;  :{0}&quot;, logMessage);&#xA;            txtWriter.WriteLine(&quot;-------------------------------&quot;);&#xA;       &#xA;&#xA;&#x9;&#x9;&#xA;    }&#xA;&#xA;}"/>
+                  <CompiledCode val="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YXRpb25Eb2N1bWVudFBhdGgAc2F2ZUFzUERGAHRleHQAbG9nTWVzc2FnZQB0eHRXcml0ZXIAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAC5jdG9yAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAGRsYXlseWtrAE1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5Xb3JkAEFwcGxpY2F0aW9uQ2xhc3MARG9jdW1lbnRDbGFzcwBQYXRoAEdldEV4dGVuc2lvbgBTeXN0ZW0uUmVmbGVjdGlvbgBNaXNzaW5nAFZhbHVlAF9BcHBsaWNhdGlvbgBXZEFsZXJ0TGV2ZWwAc2V0X0Rpc3BsYXlBbGVydHMAc2V0X1Zpc2libGUAU3RyaW5nAENvbmNhdABEb2N1bWVudHMAZ2V0X0RvY3VtZW50cwBEb2N1bWVudABPcGVuAGdldF9BY3RpdmVEb2N1bWVudABfRG9jdW1lbnQATWFpbE1lcmdlAGdldF9NYWlsTWVyZ2UAV2RNYWlsTWVyZ2VNYWluRG9jVHlwZQBzZXRfTWFpbkRvY3VtZW50VHlwZQBPcGVuRGF0YVNvdXJjZQBXZE1haWxNZXJnZURlc3RpbmF0aW9uAHNldF9EZXN0aW5hdGlvbgBFeGVjdXRlAEJvb2xlYW4AQ2xvc2UAVG9VcHBlcgBvcF9FcXVhbGl0eQBTYXZlQXMyAFdkRXhwb3J0Rm9ybWF0AFdkRXhwb3J0T3B0aW1pemVGb3IAV2RFeHBvcnRSYW5nZQBXZEV4cG9ydEl0ZW0AV2RFeHBvcnRDcmVhdGVCb29rbWFya3MARXhwb3J0QXNGaXhlZEZvcm1hdABJbnQzMgBRdWl0AEV4Y2VwdGlvbgBnZXRfTWVzc2FnZQBnZXRfSW5uZXJFeGNlcHRpb24AQXBwbGljYXRpb24ARmlsZQBTdHJlYW1Xcml0ZXIAQXBwZW5kVGV4dABJRGlzcG9zYWJsZQBEaXNwb3NlAFdyaXRlAERhdGVUaW1lAGdldF9Ob3cAVG9Mb25nVGltZVN0cmluZwBUb0xvbmdEYXRlU3RyaW5nAFdyaXRlTGluZQAAAAAAJVQAZQBtAHAAbABhAHQAZQBGAGkAbABlAFAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAMAAAAgD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+                  <SnippetLanguage val="C"/>
+                  <ForCompactFramework val="N"/>
+                  <isGuiThreadExecution val="N"/>
+                  <CompileTime HighDateTime="30976796" LowDateTime="1661937634"/>
+                  <AssemblyIds val="-882544573,"/>
+                  <RetainFocus val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="35" FlowIsn="352" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="36"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="365" EndBlockSegment="365" FlowIsn="364" Type="I">
+                  <Condition Exp="37"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="Y" Exp="35" FlowIsn="363" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="S">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="36"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="365"/>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="30" EndBlockSegment="28" FlowIsn="25" Type="I">
+                  <Condition Exp="3"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="26">
+                  <Expression val="1"/>
+                  <Condition Exp="11"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Invoke FlowIsn="31">
+                  <OperationType val="O"/>
+                  <Command val="4"/>
+                  <Wait val="N"/>
+                  <Show val="2"/>
+                  <Condition Exp="11"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <Invoke FieldID2="8" FlowIsn="27">
+                  <OperationType val="C"/>
+                  <TaskID comp="-1"/>
+                  <Lock val="Y"/>
+                  <Arguments>
+                    <Argument>
+                      <Skip val="Y"/>
+                      <Name val="ערך מוחזר"/>
+                      <Type val="24"/>
+                      <VT_Type val="8"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="4"/>
+                      <Skip val="N"/>
+                      <Name val="File"/>
+                      <Type val="8"/>
+                      <VT_Type val="10"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                      <Name val="vArgs"/>
+                      <Type val="12"/>
+                      <VT_Type val="10"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                      <Name val="vDir"/>
+                      <Type val="12"/>
+                      <VT_Type val="10"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                      <Name val="vOperation"/>
+                      <Type val="12"/>
+                      <VT_Type val="10"/>
+                    </Argument>
+                    <Argument>
+                      <Skip val="Y"/>
+                      <Name val="vShow"/>
+                      <Type val="12"/>
+                      <VT_Type val="10"/>
+                    </Argument>
+                  </Arguments>
+                  <MethodName val="ShellExecute"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <Option val="M"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="30" EndBlockSegment="30" FlowIsn="28" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="29" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="ארעה שגיאה ביצירת המסמך" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="323">
+                  <FieldID val="13"/>
+                  <WithValue val="29"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="30"/>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_isn="8" _last_test_id="9" id="1">
+            <PropertyList model="FORM_GUI0">
+              <X id="21"/>
+              <Y id="22"/>
+              <Width id="23" val="156"/>
+              <Height id="24" val="36"/>
+              <TitleBar id="26"/>
+              <SystemMenu id="27"/>
+              <BorderStyle id="64" val="1"/>
+              <_Comment id="218"/>
+              <StartupPosition id="275" val="5"/>
+              <FormName id="311" valUnicode="מיזוג לוורד DNET"/>
+              <PersistentFormState id="493"/>
+            </PropertyList>
+            <Control _test_id="2" id="1">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="אנא המתן, מבצע מיזוג לוורד..."/>
+                <X id="21" val="12"/>
+                <Y id="22" val="14"/>
+                <Width id="23" val="132"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="113"/>
+                <Color id="51" val="2"/>
+                <Style id="63" val="7"/>
+                <BorderStyle id="64" val="3"/>
+                <HorizontalAlignment id="65" val="2"/>
+                <_VerticalScroll id="73"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="Delay(20)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="36">
+            <ExpSyntax val="DNExceptionOccurred()"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="35">
+            <ExpSyntax val="DNException().Message"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="25">
+            <ExpSyntax val="NOT FileExist(Trim({0,1}))"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="28">
+            <ExpSyntax val="NOT FileExist(Trim({0,2}))"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="24">
+            <ExpSyntax val="'מסמך תבנית 'HEB&amp;Trim({0,1})&amp;' לא נמצא. מיזוג המסמך הופסק'HEB"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="27">
+            <ExpSyntax val="'קובץ מקור נתונים 'HEB&amp;Trim({0,2})&amp;' לא נמצא. מיזוג המסמך הופסק'HEB"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3">
+            <ExpSyntax val="{0,15}='OK'"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="4">
+            <ExpSyntax val="'&quot;'&amp;Trim ({0,4})&amp;'&quot;'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="NOT {0,10}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="29">
+            <ExpSyntax val="Trim({0,13})&amp;'מיזוג לוורד (דוט נט). ארעה שגיאה ביצירת המסמך :'HEB&amp;' '&amp;Trim({0,15})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="30">
+            <ExpSyntax val="'M:\Magic\Temp\Notification\1_Borrower_NG_Acm_DebitCancel.docx'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="31">
+            <ExpSyntax val="'M:\Magic\Temp\Notification\AlertLetterData_43231729.html'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="33">
+            <ExpSyntax val="'M:\Magic\Temp\Notification\Test.pdf'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="34">
+            <ExpSyntax val="'TRUE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="37">
+            <ExpSyntax val="{0,14}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="38">
+            <ExpSyntax val="'קובץ מסמך תבנית 'HEB&amp; {0,1}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="39">
+            <ExpSyntax val="'קובץ מקור הנתונים 'HEB&amp; {0,2}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="40">
+            <ExpSyntax val="'קובץ מסמך יעד 'HEB&amp; {0,4}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+        </Expressions>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

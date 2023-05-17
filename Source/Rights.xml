@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="113"/>
+    <LastIsnFolder val="0"/>
+    <Folders/>
+  </Header>
+
+  <RightsRepository>
+    <Rights>
+      <Right id="1" name="יפלא">
+        <PublicRight val="Y"/>
+        <Key val="יפלא"/>
+      </Right>
+      <Right id="2" name="מנהל">
+        <PublicRight val="Y"/>
+        <Key val="מנהל"/>
+      </Right>
+      <Right id="3" name="מתנדב">
+        <PublicRight val="Y"/>
+        <Key val="מתנדב"/>
+      </Right>
+      <Right id="4" name="הנהחש">
+        <PublicRight val="Y"/>
+        <Key val="הנהחש"/>
+      </Right>
+      <Right id="5" name="עדכון ת.פתיחה">
+        <PublicRight val="Y"/>
+        <Key val="ת.פתיחה"/>
+      </Right>
+      <Right id="6" name="CRM">
+        <PublicRight val="Y"/>
+        <Key val="CRM"/>
+      </Right>
+      <Right id="7" name="גישה">
+        <PublicRight val="Y"/>
+        <Key val="גישה"/>
+      </Right>
+      <Right id="8" name="עדכון לוח סילוקין מקורי">
+        <PublicRight val="Y"/>
+        <Key val="סילוקמקור"/>
+      </Right>
+      <Right id="9" name="לא קרן הגליל (לא בשימוש)">
+        <PublicRight val="Y"/>
+        <Key val="לאקרןגליל"/>
+      </Right>
+      <Right id="10" name="ריבית">
+        <PublicRight val="Y"/>
+        <Key val="ריבית"/>
+      </Right>
+      <Right id="11" name="סמנכל הלוואות">
+        <PublicRight val="Y"/>
+        <Key val="סמנכל"/>
+      </Right>
+      <Right id="12" name="WorthCredit SMS">
+        <PublicRight val="Y"/>
+        <Key val="Worthy"/>
+      </Right>
+      <Right id="13" name="ללא_תפריט_תורמים">
+        <PublicRight val="Y"/>
+        <Key val="ללא_תורמים"/>
+      </Right>
+      <Right id="14" name="ללא_תפריט_ניהול">
+        <PublicRight val="Y"/>
+        <Key val="ללא_ניהול"/>
+      </Right>
+      <Right id="15" name="הלבנה">
+        <PublicRight val="Y"/>
+        <Key val="הלבנת הון"/>
+      </Right>
+      <Right id="16" name="שינוי טבלת חשודים">
+        <PublicRight val="Y"/>
+        <Key val="חשודים"/>
+      </Right>
+      <Right id="17" name="מסמכים">
+        <PublicRight val="Y"/>
+        <Key val="מסמכים"/>
+      </Right>
+      <Right id="18" name="אבנר_סימון">
+        <PublicRight val="Y"/>
+        <Key val="אבנר_סימון"/>
+      </Right>
+      <Right id="19" name="עדכון_מחיקת_מסמכים">
+        <PublicRight val="Y"/>
+        <Key val="עדכוןמחיקה"/>
+      </Right>
+      <Right id="20" name="ללן">
+        <PublicRight val="Y"/>
+        <Key val="ללן"/>
+      </Right>
+      <Right id="21" name="טבלאות מערכת">
+        <PublicRight val="Y"/>
+        <Key val="טבלאות"/>
+      </Right>
+      <Right id="22" name="טבלאות מערכת עם ריבית">
+        <PublicRight val="Y"/>
+        <Key val="טבלהריבית"/>
+      </Right>
+      <Right id="23" name="טבלת קרנות צפיה">
+        <PublicRight val="Y"/>
+        <Key val="קרנותצפיה"/>
+      </Right>
+      <Right id="24" name="טבלת קרנות עדכון">
+        <PublicRight val="Y"/>
+        <Key val="קרנותעדכון"/>
+      </Right>
+      <Right id="25" name="שערי מטבעות">
+        <PublicRight val="Y"/>
+        <Key val="טשערמטבע"/>
+      </Right>
+      <Right id="26" name="טבלת סוגי תרומה">
+        <PublicRight val="Y"/>
+        <Key val="טסוגיתרומה"/>
+      </Right>
+      <Right id="27" name="טבלת בנקים">
+        <PublicRight val="Y"/>
+        <Key val="טבנקים"/>
+      </Right>
+      <Right id="28" name="טבלת סוגי קרנות">
+        <PublicRight val="Y"/>
+        <Key val="טסוגיקרנות"/>
+      </Right>
+      <Right id="29" name="טבלת סוגי הוצאות נוספות">
+        <PublicRight val="Y"/>
+        <Key val="טסהונוספות"/>
+      </Right>
+      <Right id="30" name="טבלת קבוצת קרנות">
+        <PublicRight val="Y"/>
+        <Key val="טקקרנות"/>
+      </Right>
+      <Right id="31" name="טבלת דמי טיפול">
+        <PublicRight val="Y"/>
+        <Key val="טדמיטיפול"/>
+      </Right>
+      <Right id="32" name="טבלת פול">
+        <PublicRight val="Y"/>
+        <Key val="טפול"/>
+      </Right>
+      <Right id="34" name="טבלאות בקרה">
+        <PublicRight val="Y"/>
+        <Key val="טבלאותבקרה"/>
+      </Right>
+      <Right id="35" name="טבלת בקרה">
+        <PublicRight val="Y"/>
+        <Key val="טבלתבקרה"/>
+      </Right>
+      <Right id="36" name="מונים פנימיים">
+        <PublicRight val="Y"/>
+        <Key val="מוניםפנימי"/>
+      </Right>
+      <Right id="37" name="חשבונות בנק פנימיים">
+        <PublicRight val="Y"/>
+        <Key val="חןבנקפנימי"/>
+      </Right>
+      <Right id="38" name="משלוח מסמכים לחתימת לקוח">
+        <PublicRight val="Y"/>
+        <Key val="חתימתלקוח"/>
+      </Right>
+      <Right id="39" name="טבלת סוגי הלוואה">
+        <PublicRight val="Y"/>
+        <Key val="סוגיהלוואה"/>
+      </Right>
+      <Right id="40" name="שינוי סוג הלוואה">
+        <PublicRight val="Y"/>
+        <Key val="שסוגהלוואה"/>
+      </Right>
+      <Right id="42" name="תשלומים חוזרים">
+        <PublicRight val="Y"/>
+        <Key val="תשלוםחוזר"/>
+      </Right>
+      <Right id="43" name="מחלקת גביה">
+        <PublicRight val="Y"/>
+        <Key val="מחלקתגביה"/>
+      </Right>
+      <Right id="44" name="שינוי סטטוס תיק להמתנה להוצל&quot;ם">
+        <PublicRight val="Y"/>
+        <Key val="סהמתנההוצל"/>
+      </Right>
+      <Right id="45" name="שינוי סכום הלוואה">
+        <PublicRight val="Y"/>
+        <Key val="שסךהלוואה"/>
+      </Right>
+      <Right id="46" name="שינוי המחאה">
+        <PublicRight val="Y"/>
+        <Key val="שהמחאה"/>
+      </Right>
+      <Right id="47" name="שינוי לוח החזרים עם אישור מנהל">
+        <PublicRight val="Y"/>
+        <Key val="שלוחהחזרמנ"/>
+      </Right>
+      <Right id="48" name="שינוי תאריך קבלה">
+        <PublicRight val="Y"/>
+        <Key val="שתאקבלה"/>
+      </Right>
+      <Right id="49" name="תפריט פיקדונות">
+        <PublicRight val="Y"/>
+        <Key val="תפיקדון"/>
+      </Right>
+      <Right id="50" name="עדכון טבלאות פיקדון">
+        <PublicRight val="Y"/>
+        <Key val="עדטבלפקד"/>
+      </Right>
+      <Right id="51" name="שינוי תאריך סיום פיקדון">
+        <PublicRight val="Y"/>
+        <Key val="שתאפקד"/>
+      </Right>
+      <Right id="52" name="תפריט בדיקות">
+        <PublicRight val="Y"/>
+        <Key val="תבדיקות"/>
+      </Right>
+      <Right id="53" name="ממשקים חיצויים">
+        <PublicRight val="Y"/>
+        <Key val="ממשקחיצוני"/>
+      </Right>
+      <Right id="54" name="תחזוקת ממשקים חיצוניים">
+        <PublicRight val="Y"/>
+        <Key val="תחזקממשקחי"/>
+      </Right>
+      <Right id="55" name="תפריט לקוחות">
+        <PublicRight val="Y"/>
+        <Key val="ת_לקוחות"/>
+      </Right>
+      <Right id="56" name="תפריט תיק הלוואה">
+        <PublicRight val="Y"/>
+        <Key val="ת_תיקהלואה"/>
+      </Right>
+      <Right id="57" name="תפריט פקדונות">
+        <PublicRight val="Y"/>
+        <Key val="ת_פקדונות"/>
+      </Right>
+      <Right id="58" name="תפריט תורמים">
+        <PublicRight val="Y"/>
+        <Key val="ת_תורמים"/>
+      </Right>
+      <Right id="59" name="תפריט קרנות">
+        <PublicRight val="Y"/>
+        <Key val="ת_קרנות"/>
+      </Right>
+      <Right id="60" name="תפריט גבייה">
+        <PublicRight val="Y"/>
+        <Key val="ת_גבייה"/>
+      </Right>
+      <Right id="61" name="תפריט גבייה הפקדות">
+        <PublicRight val="Y"/>
+        <Key val="ת_גבהפקד"/>
+      </Right>
+      <Right id="62" name="פורטל טיפול בהלוואות בפיגור">
+        <PublicRight val="Y"/>
+        <Key val="ת_גבפיגור"/>
+      </Right>
+      <Right id="63" name="משלוח התראות לתשלומים חוזרים">
+        <PublicRight val="Y"/>
+        <Key val="ת_גבהתראה"/>
+      </Right>
+      <Right id="64" name="עיון נתוני מס&quot;ב">
+        <PublicRight val="Y"/>
+        <Key val="ת_גבהתרעין"/>
+      </Right>
+      <Right id="65" name="דוחות גבייה">
+        <PublicRight val="Y"/>
+        <Key val="ד_גבייה"/>
+      </Right>
+      <Right id="66" name="דו&quot;ח גבייה 0 עבור BDI">
+        <PublicRight val="Y"/>
+        <Key val="ד_גבייהBDI"/>
+      </Right>
+      <Right id="67" name="דוחות גיוס משאבים">
+        <PublicRight val="Y"/>
+        <Key val="ד_גמשאב"/>
+      </Right>
+      <Right id="68" name="דו&quot;ח החזרים למשקיעים">
+        <PublicRight val="Y"/>
+        <Key val="ד_גמשאבחזר"/>
+      </Right>
+      <Right id="69" name="דוחות קרנות">
+        <PublicRight val="Y"/>
+        <Key val="ד_קרנות"/>
+      </Right>
+      <Right id="70" name="דו&quot;ח מצב קרנות (ניר)">
+        <PublicRight val="Y"/>
+        <Key val="ד_קרנותניר"/>
+      </Right>
+      <Right id="71" name="דוחות כספיים">
+        <PublicRight val="Y"/>
+        <Key val="ד_כספים"/>
+      </Right>
+      <Right id="72" name="דוחות ניהול סיכונים">
+        <PublicRight val="Y"/>
+        <Key val="ד_סיכונים"/>
+      </Right>
+      <Right id="73" name="דוח PAR">
+        <PublicRight val="Y"/>
+        <Key val="ד_סיכוןPAR"/>
+      </Right>
+      <Right id="74" name="דוחות שונים">
+        <PublicRight val="Y"/>
+        <Key val="ד_שונים"/>
+      </Right>
+      <Right id="75" name="דו&quot;ח החזרים למשקיעים">
+        <PublicRight val="Y"/>
+        <Key val="ד_שונהחזר"/>
+      </Right>
+      <Right id="76" name="דו&quot;ח בדיקה למסמכים">
+        <PublicRight val="Y"/>
+        <Key val="ד_שונמסמכ"/>
+      </Right>
+      <Right id="77" name="דוחות ערבות מדינה">
+        <PublicRight val="Y"/>
+        <Key val="ד_ערבמדינה"/>
+      </Right>
+      <Right id="78" name="תפריט הנה&quot;ח">
+        <PublicRight val="Y"/>
+        <Key val="ת_הנהח"/>
+      </Right>
+      <Right id="79" name="תפריט דיווח אשראי">
+        <PublicRight val="Y"/>
+        <Key val="ת_דיוחאשר"/>
+      </Right>
+      <Right id="80" name="ריצת הלבנת הון חודשית">
+        <PublicRight val="Y"/>
+        <Key val="ת_ההוןחודש"/>
+      </Right>
+      <Right id="81" name="תפריט הלבנת הון">
+        <PublicRight val="Y"/>
+        <Key val="ת_ההון"/>
+      </Right>
+      <Right id="82" name="טבלאות לקוחות">
+        <PublicRight val="Y"/>
+        <Key val="ט_לקוחות"/>
+      </Right>
+      <Right id="83" name="טבלאות תיקי הלוואה">
+        <PublicRight val="Y"/>
+        <Key val="ט_תיקהלואה"/>
+      </Right>
+      <Right id="84" name="טבלאות קרנות">
+        <PublicRight val="Y"/>
+        <Key val="ט_קרנות"/>
+      </Right>
+      <Right id="85" name="טבלאות פקדונות">
+        <PublicRight val="Y"/>
+        <Key val="ט_פקדונות"/>
+      </Right>
+      <Right id="86" name="טבלאות גבייה">
+        <PublicRight val="Y"/>
+        <Key val="ט_גבייה"/>
+      </Right>
+      <Right id="87" name="טבלאות בקרה">
+        <PublicRight val="Y"/>
+        <Key val="ט_בקרה"/>
+      </Right>
+      <Right id="88" name="טבלאות הלבנת הון">
+        <PublicRight val="Y"/>
+        <Key val="ט_ההון"/>
+      </Right>
+      <Right id="89" name="טבלאות שונות">
+        <PublicRight val="Y"/>
+        <Key val="ט_שונות"/>
+      </Right>
+      <Right id="90" name="תפריט שירות לקוחות">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתלקוח"/>
+      </Right>
+      <Right id="91" name="העברת דמי טיפול מתיק לתיק">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתהלואה"/>
+      </Right>
+      <Right id="92" name="ייצוא טבלת מעקב תיקים">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתהליצא"/>
+      </Right>
+      <Right id="93" name="תפריט שירות גבייה">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתגב"/>
+      </Right>
+      <Right id="94" name="תחזק הגדרת תבניות התראות תשלום">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתגבהתר"/>
+      </Right>
+      <Right id="95" name="תפריט שירות קרנות">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתקרנ"/>
+      </Right>
+      <Right id="96" name="תפריט שירות קרנות 2">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתקרנ2"/>
+      </Right>
+      <Right id="97" name="תפריט שירות תורמים">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתתרמ"/>
+      </Right>
+      <Right id="98" name="תפריט שירות תורמים ייצוא">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתתרמיצ"/>
+      </Right>
+      <Right id="99" name="תפריט שירות SF">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתSF"/>
+      </Right>
+      <Right id="100" name="תפריט מחשבונים">
+        <PublicRight val="Y"/>
+        <Key val="ת_מחשבונ"/>
+      </Right>
+      <Right id="101" name="תפריט בדיקות">
+        <PublicRight val="Y"/>
+        <Key val="ת_בדיקה"/>
+      </Right>
+      <Right id="102" name="תפריט אחראי">
+        <PublicRight val="Y"/>
+        <Key val="ת_אחראי"/>
+      </Right>
+      <Right id="103" name="בדיקת דיווחי אשראי להלוואה">
+        <PublicRight val="Y"/>
+        <Key val="ת_אחרדחאשר"/>
+      </Right>
+      <Right id="104" name="תפריט גיוס משאבים">
+        <PublicRight val="Y"/>
+        <Key val="ת_גמשאב"/>
+      </Right>
+      <Right id="105" name="תפריט גיוס משאבים הפקדות">
+        <PublicRight val="Y"/>
+        <Key val="ת_גמשאבהפק"/>
+      </Right>
+      <Right id="106" name="תפריט גיוס משאבים קבלות">
+        <PublicRight val="Y"/>
+        <Key val="ת_גמשאבקבל"/>
+      </Right>
+      <Right id="107" name="תפריט פריוריטי">
+        <PublicRight val="Y"/>
+        <Key val="ת_פריוריטי"/>
+      </Right>
+      <Right id="108" name="תפריט שרות פריוריטי">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתפררטי"/>
+      </Right>
+      <Right id="109" name="טבלת שערי מטבע">
+        <PublicRight val="Y"/>
+        <Key val="ט_שמטבע"/>
+      </Right>
+      <Right id="110" name="קובץ המחאות הלוואה">
+        <PublicRight val="Y"/>
+        <Key val="ת_גבייההמח"/>
+      </Right>
+      <Right id="111" name="דו&quot;ח תרומות לתורם">
+        <PublicRight val="Y"/>
+        <Key val="ד_גמשאבתרם"/>
+      </Right>
+      <Right id="112" name="פרמטרים להתראות תשלומים חוזרים">
+        <PublicRight val="Y"/>
+        <Key val="ת_שרתגבתשל"/>
+      </Right>
+      <Right id="113" name="עדכון קרן בהלוואה">
+        <PublicRight val="Y"/>
+        <Key val="עדכןקרןהלו"/>
+      </Right>
+    </Rights>
+  </RightsRepository>
+
+</Application>

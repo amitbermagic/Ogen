@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="56"/>
+    <LastIsnFolder val="1"/>
+    <Folders>
+      <Folder id="1">
+        <Name val="מדיה"/>
+      </Folder>
+    </Folders>
+  </Header>
+
+  <ModelsRepository>
+    <Models>
+      <Object Public="V9 Compatible Default Table" id="1" name="V9 Compatible Default Table">
+        <PropertyList model="CTRL_GUI0_TABLE">
+          <Color id="51" val="1"/>
+          <BorderStyle id="64" val="1"/>
+          <LineDivider id="78" val="Y"/>
+          <ColumnDivider id="189" val="Y"/>
+          <TableInWindow id="190" val="Y"/>
+          <_WindowWidth id="241"/>
+          <RowHighlightStyle id="409" val="2"/>
+          <BottomPositionInterval id="411" val="2"/>
+          <V11TableInWindow id="535"/>
+        </PropertyList>
+      </Object>
+      <Object id="2" name="מספר תיק">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="9Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="3" name="FL=לווה/TR=ערב">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <Range id="98" valUnicode="ערב,לווה"/>
+          <Picture id="157" valUnicode="1A"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="4" name="מספר קבלה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="9P0Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="5" name="מספר המחאה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="9Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="6" name="קוד בטבלה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="7" name="תאור בטבלה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H30"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="8" name="?">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="9" name="סכום הלוואה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N6.2CZ"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="6"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="10" name="סכום החזר">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N5.2Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="5"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="11" name="סה&quot;כ">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N9.2CZ"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="12" name="============================">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="13" name="לקוח:תעודת זהות">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="9P0Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="14" name="לקוח:שם מלא">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H25"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="25"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="15" name="לקוח:שם משפחה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="16" name="לקוח:שם פרטי">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H15"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="15"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="17" name="לקוח:תואר">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H15"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="15"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="18" name="לקוח:תפקיד">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="19" name="לקוח:לכבוד">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H20"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="20" name="============================">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="21" name="כתובת:רחוב">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H30"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="22" name="כתובת:מס' בית/דירה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="7"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="23" name="כתובת:תא דואר">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="7"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="7"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="24" name="כתובת:מיקוד">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="25" name="============================">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="26" name="מס' טלפון">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="25"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="25"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="27" name="E-mail">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="28" name="מס' פריט">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4P0Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="29" name="שעה ודקות">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_TIME" id="1"/>
+          <Picture id="157" valUnicode="HH:MMZ"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="30" name="תאריך">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Range id="98" valUnicode="01/01/1900-01/01/2099,  00/00/0000,31/12/9999"/>
+          <Picture id="157" valUnicode="##/##/YYYYZ A"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="31" name="חודש ושנה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Range id="98" valUnicode="01/1900-01/2099,   00/0000,12/9999"/>
+          <Picture id="157" valUnicode="MM/YYYYZ"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <DefaultValue id="170" val="0"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="32" name="?">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="33" name="אחוז">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3.2%Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181" val="2"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="34" name="כמות">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N7CZ"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="3"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="7"/>
+          <_Negative id="192" val="Y"/>
+        </PropertyList>
+      </Object>
+      <Object id="35" name="הערה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H70"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="70"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="36" name="מבצע">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H10"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="37" name="============================">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="38" name="F:התר">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <Range id="98" valUnicode="כן,לא"/>
+          <Picture id="157" valUnicode="1A"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="39" name="F:אישור">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <Range id="98" valUnicode="אשר,בטל"/>
+          <Picture id="157" valUnicode="1A"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="40" name="F:תיבת סימון">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_CHECKBOX">
+              <RightToLeft id="130"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_CHECKBOX">
+              <RightToLeft id="130"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="41" name="F:קישור">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+        </PropertyList>
+      </Object>
+      <Object id="42" name="מצב משימה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="ה,ע,ד"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="43" name="============================">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="44" name="בנק:קוד">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2P0Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="45" name="בנק:סניף">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3P0Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="46" name="בנק:מס' חשבון">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="9P0Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="9"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="47" name="============================">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="48" name="?U:יעד הדפסה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="1Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="1"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="49" name="?U:כמות העתקים">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3Z"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167" val="0"/>
+          <StoredAs id="173"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+        </PropertyList>
+      </Object>
+      <Object id="50" name="?U:שם קובץ הדפסה">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="40"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Style id="539" val="3"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_EDIT">
+              <Color id="51" val="2"/>
+              <RightToLeft id="130"/>
+              <Border id="452" val="Y"/>
+              <V11Color id="695" val="2"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="40"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="51" name="U:שדה כפתור">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="H25"/>
+          <GuiDisplay id="158">
+            <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+              <RightToLeft id="130"/>
+            </PropertyList>
+          </GuiDisplay>
+          <GuiDisplayTable id="159">
+            <PropertyList model="CTRL_GUI0_PUSH_BUTTON">
+              <RightToLeft id="130"/>
+            </PropertyList>
+          </GuiDisplayTable>
+          <NullValue id="167"/>
+          <StoredAs id="173"/>
+          <Size id="174" val="25"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="55" name="טבלה">
+        <PropertyList model="CTRL_GUI0_TABLE">
+          <LineDivider id="78" val="Y"/>
+          <ColumnDivider id="189" val="Y"/>
+          <RowHighlightColor id="410" val="3"/>
+          <BottomPositionInterval id="411" val="2"/>
+          <SetTableColorBy id="428" val="2"/>
+          <AlternatingBgColor id="429" val="33"/>
+          <TitleColor id="677" val="32"/>
+          <InactiveRowHighlightColor id="697" val="8"/>
+        </PropertyList>
+      </Object>
+      <Object id="52" name="Files_in_Folder">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="256"/>
+          <Size id="174" val="512"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="56" name="System.Data">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_BLOB" id="1"/>
+          <_FieldStyle id="276" val="5"/>
+          <ObjectType id="478" val="System.Data"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" id="53" name="File Names (Read Dir)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_UNICODE" id="1"/>
+          <Picture id="157" valUnicode="256"/>
+          <Size id="174" val="512"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" id="54" name="File Names # (Read Dir)">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="8"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="8"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+    </Models>
+  </ModelsRepository>
+
+</Application>

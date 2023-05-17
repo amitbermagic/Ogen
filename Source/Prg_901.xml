@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="מיזוג מסמכים ושדות לחתימה" ISN_2="1" LastIsn="5" id="901">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <TSK_PARAMS val="5"/>
+            <ParametersAttributes>
+              <Attr MgAttr="O"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="B"/>
+              <Attr MgAttr="B"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="B"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="Y"/>
+          <LastModified _date="738031" _time="8259" date="29/08/2021" time="02:17:39"/>
+        </Header>
+        <ItemIsn val="9"/>
+        <Resource>
+          <Columns>
+            <Column id="1" name="פ-מערך רשימת מסמכים">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="4"/>
+                <CellModel attr_obj="FIELD_BLOB" comp="-1" id="287" obj="52"/>
+              </PropertyList>
+            </Column>
+            <Column id="4" name="פ-שם מסמך ממוזג">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="255"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="255"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="פ-שם גופן מסמך ממוזג">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="30"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3" name="פ-דף מפריד בין סוגי מסמכים">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="6" name="פלט ל-WORD">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="7" name="ParticipateFieldsToMerge">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="5"/>
+                <ObjectType id="478" val="System.Data.DataTable"/>
+              </PropertyList>
+            </Column>
+            <Column id="8" name="ParticipateFieldsToSign">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="5"/>
+                <ObjectType id="478" val="System.Data.DataTable"/>
+              </PropertyList>
+            </Column>
+            <Column id="5" name="ArrayDocumentsToMerge">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="5"/>
+                <ObjectType id="478" val="System.String[]"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="A"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="A"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="T"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="N"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="N"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="Y"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="1" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="1" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4" FlowIsn="7" id="4">
+                  <Column val="4"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="4" id="2">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="5" id="3">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="6" FlowIsn="34" id="6">
+                  <Column val="6"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="7" FlowIsn="46" id="7">
+                  <Column val="7"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="8" FlowIsn="94" id="8">
+                  <Column val="8"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="57">
+                  <Type val="1"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="5" FlowIsn="15" id="5">
+                  <Column val="5"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="R"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="19">
+                  <FieldID val="5"/>
+                  <WithValue val="5"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="70">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="4"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="27" EndBlockSegment="27" FlowIsn="26" Type="L">
+                  <Condition Exp="9"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="28">
+                  <Expression val="10"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="27"/>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="36" EndBlockSegment="37" FlowIsn="35" Type="I">
+                  <Condition Exp="11"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="132">
+                  <Type val="2"/>
+                  <Text val="מבצע איחוד של כל המסמכים למסמך וורד אחד ע&quot;פ מערך המסמכים ללא טיפול בשדות מיזוג"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Invoke FlowIsn="6">
+                  <OperationType val="."/>
+                  <TaskID comp="-1"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Skip val="N"/>
+                      <DotNetType val="void"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="5"/>
+                      <Skip val="N"/>
+                      <Name val="p_ArrayDocumentsToMerge"/>
+                      <DotNetType val="System.String[]"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="4"/>
+                      <Skip val="N"/>
+                      <Name val="p_MergedDocumentPath"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="2"/>
+                      <Skip val="N"/>
+                      <Name val="p_DocumentFontName"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3"/>
+                      <Skip val="N"/>
+                      <Name val="p_pageBreak"/>
+                      <DotNetType val="System.Boolean"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <FunctionName val="func"/>
+                  <SnippetCode val="using System;&#xA;using Microsoft.Office.Interop.Word;&#xA;using System.Reflection;&#xA;using System.Diagnostics;&#xA;using System.Windows.Forms;&#xA;&#xA;public static class Snippet&#xA;{&#xA;&#x9;public static void func(System.String[] p_ArrayDocumentsToMerge, System.String p_MergedDocumentPath, System.String p_DocumentFontName, System.Boolean p_pageBreak)&#xA;&#x9;{&#xA;&#x9;&#x9;&#xA;        Merge(p_ArrayDocumentsToMerge, p_MergedDocumentPath, p_pageBreak,p_DocumentFontName);&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;}&#xA;&#x9;public static void Merge(String[] filesToMerge, string fileSavePath, bool insertPageBreaks,string DocumentFontName)&#xA;        {&#xA;            object missing = System.Type.Missing;&#xA;            object pageBreak = WdBreakType.wdPageBreak;&#xA;            object outputFile = fileSavePath;&#xA;            &#xA;&#xA;            Microsoft.Office.Interop.Word.Application wordApplication = new Microsoft.Office.Interop.Word.Application();&#xA;            try&#xA;            {&#xA;                Document wordDocument = wordApplication.Documents.Add(ref missing, ref missing, ref missing, ref missing);&#xA;                Selection selection = wordApplication.Selection;&#xA;&#xA;                foreach (string docFile in filesToMerge)&#xA;                {&#xA;                    selection.InsertFile(docFile, ref missing, ref missing, ref missing, ref missing);&#xA;                    if (insertPageBreaks)&#xA;                    {&#xA;                        selection.InsertBreak(ref pageBreak);&#xA;                    }&#xA;                }&#xA;                var start = wordDocument.Content.Start;&#xA;                var end = wordDocument.Content.End;&#xA;&#xA;                var docRange = wordDocument.Range(start, end);&#xA;                docRange.Select();&#xA;&#xA;                &#xA;                selection.Font.Name = DocumentFontName;&#xA;                wordDocument.SaveAs(ref outputFile, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing);&#xA;                wordDocument = null;&#xA;                ((_Application)wordApplication).Quit(); &#xA;            }&#xA;            catch (Exception ex) { throw ex; }&#xA;        }&#xA;}"/>
+                  <CompiledCode val="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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="/>
+                  <SnippetLanguage val="C"/>
+                  <ForCompactFramework val="N"/>
+                  <isGuiThreadExecution val="N"/>
+                  <CompileTime HighDateTime="30821732" LowDateTime="3616406903"/>
+                  <AssemblyIds val="-882544573,"/>
+                  <RetainFocus val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="36" EndBlockSegment="36" FlowIsn="37" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="133">
+                  <Type val="2"/>
+                  <Text val="מבצע איחוד של כל המסמכים למסמך PDF אחד על פי מערך שהועבר כפרמטר ומחליף שדות חתימה"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Invoke FlowIsn="80">
+                  <OperationType val="."/>
+                  <TaskID comp="-1"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="8"/>
+                      <Skip val="N"/>
+                      <DotNetType val="System.Data.DataTable"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="5"/>
+                      <Skip val="N"/>
+                      <Name val="p_ArrayDocumentsToMerge"/>
+                      <DotNetType val="System.String[]"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="4"/>
+                      <Skip val="N"/>
+                      <Name val="p_MergedDocumentPath"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="2"/>
+                      <Skip val="N"/>
+                      <Name val="p_DocumentFontName"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="3"/>
+                      <Skip val="N"/>
+                      <Name val="p_pageBreak"/>
+                      <DotNetType val="System.Boolean"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="7"/>
+                      <Skip val="N"/>
+                      <Name val="p_ParticipantsDT"/>
+                      <DotNetType val="System.Data.DataTable"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <ReturnValue val="7"/>
+                  <FunctionName val="func"/>
+                  <SnippetCode val="using System;&#xA;using Microsoft.Office.Interop.Word;&#xA;using System.Reflection;&#xA;using System.Diagnostics;&#xA;using System.Windows.Forms;&#xA;using System.IO;&#x9;&#xA;using PdfSharp.Pdf;&#xA;using PdfSharp.Pdf.IO; &#xA;&#xA;public static class Snippet&#xA;{&#xA;&#x9;public static System.Data.DataTable func(System.String[] p_ArrayDocumentsToMerge, System.String p_MergedDocumentPath, System.String p_DocumentFontName, System.Boolean p_pageBreak, System.Data.DataTable p_ParticipantsDT)&#xA;&#x9;{&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;Microsoft.Office.Interop.Word.Application wordApplication = new Microsoft.Office.Interop.Word.Application();&#xA;&#x9;&#x9;System.Data.DataTable ParticipantsFieldsToSign = new System.Data.DataTable();&#xA;&#x9;&#x9;wordApplication.Options.ConfirmConversions = false;&#xA;&#x9;&#x9;&#xA;        ParticipantsFieldsToSign = MergeToPDF(wordApplication, p_ArrayDocumentsToMerge, p_MergedDocumentPath, p_pageBreak,p_DocumentFontName,p_ParticipantsDT);&#x9;&#xA;&#x9;&#x9;return ParticipantsFieldsToSign;&#xA;&#x9;&#x9; &#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;public static System.Data.DataTable MergeToPDF(Microsoft.Office.Interop.Word.Application p_wordApplication,String[] filesToMerge, string fileSavePath, bool insertPageBreaks,string DocumentFontName,System.Data.DataTable p_ParticipantsDT)&#xA;    { &#xA;&#x9;&#x9;&#xA;            object missing = System.Type.Missing;&#xA;            object outputFile = fileSavePath;&#xA;            PdfDocument outputPDFDocument = new PdfDocument();&#xA;            PdfDocument inputPDFDocument = new PdfDocument();&#xA;&#x9;&#x9;&#x9;System.Data.DataTable x = new System.Data.DataTable();&#xA;&#x9;&#x9;&#x9;System.Data.DataTable AllMergeFieldsDT = new System.Data.DataTable();&#xA;            int DocumentCounter =0;&#xA;            try&#xA;            {&#xA;                p_wordApplication.Visible= false;&#xA;                &#xA;&#x9;&#x9;&#x9;&#x9;//Go over each documents on the documents array&#xA;                foreach (string docFile in filesToMerge)&#xA;                {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;DocumentCounter++;&#xA;&#x9;&#x9;&#x9;&#x9;    string pdfFile = Path.ChangeExtension(docFile,&quot;pdf&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;//MessageBox.Show(pdfFile);&#xA;                &#x9;Document wordDocument = p_wordApplication.Documents.Open(docFile);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;x = MergeSignTags(p_ParticipantsDT,wordDocument,p_wordApplication,DocumentCounter);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;AllMergeFieldsDT.Merge(x, false, System.Data.MissingSchemaAction.Add);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;wordDocument.ExportAsFixedFormat(pdfFile, WdExportFormat.wdExportFormatPDF);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;((Microsoft.Office.Interop.Word._Document)wordDocument).Close(-1, ref missing, ref missing); &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;wordDocument = null;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;try&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;inputPDFDocument = PdfReader.Open(pdfFile, PdfDocumentOpenMode.Import);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;catch(PdfSharp.Pdf.IO.PdfReaderException)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{ &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;//string newName =  WriteCompatiblePdf(pdfFile);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;//inputPDFDocument = PdfReader.Open(newName, PdfDocumentOpenMode.Import);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;outputPDFDocument.Version = inputPDFDocument.Version;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;foreach (PdfPage page in inputPDFDocument.Pages)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;outputPDFDocument.AddPage(page);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;                }&#xA;&#x9;&#x9;&#x9;&#x9;outputPDFDocument.Save(fileSavePath);&#xA;                &#xA;                &#xA;                ((_Application)p_wordApplication).Quit();&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9; return AllMergeFieldsDT;&#x9;&#xA;            }&#xA;            catch (Exception ex) { &#xA;&#x9;&#x9;&#x9;&#x9; ((_Application)p_wordApplication).Quit();&#xA;&#x9;&#x9;&#x9;&#x9;MessageBox.Show(&quot;Err: &quot;+ex.Message);&#xA;&#x9;&#x9;&#x9;&#x9;throw ex; }&#xA;&#x9;&#x9;&#x9;&#xA;    }&#xA;&#x9;//merge all tags in the documents&#xA;&#x9;public static System.Data.DataTable MergeSignTags(System.Data.DataTable p_ParticipantsDT,Microsoft.Office.Interop.Word.Document p_wordDocument,Microsoft.Office.Interop.Word.Application p_wordApplication, int p_DocumentCounter)&#xA;&#x9;{&#xA;&#x9;&#x9;&#x9;//Create Datatable with particioates and all merge fields  &#xA;&#x9;&#x9;&#x9;System.Data.DataTable ParticipantsFieldsToSignDT = CreateParticipantsFieldsToSignDT();&#xA;&#x9;&#x9;&#x9;System.Data.DataRow myDataRow;&#xA;&#x9;&#x9;&#x9;object missing = System.Type.Missing;&#xA;&#x9;&#x9;&#x9;int NoOfDescriptionFiledsForPerticipate = 0;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;for (int participateNo = 0; participateNo &lt; p_ParticipantsDT.Rows.Count; participateNo++)&#xA;            {&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;int NoOfMergeFiledsForPerticipate = 1;     &#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;Range rng = p_wordDocument.Content;&#xA;        &#x9;&#x9;   &#xA;&#x9;&#x9;&#x9;&#x9;&#xA;                string id = p_ParticipantsDT.Rows[participateNo][&quot;id&quot;].ToString();&#xA;                string MergeFieldName = p_ParticipantsDT.Rows[participateNo][&quot;MergeFieldName&quot;].ToString();&#xA;                string TagTemplate = p_ParticipantsDT.Rows[participateNo][&quot;TagTemplate&quot;].ToString();&#xA;&#x9;&#x9;&#x9;&#x9;string FieldType = p_ParticipantsDT.Rows[participateNo][&quot;FieldType&quot;].ToString(); &#xA;&#x9;&#x9;&#x9;&#x9;string FieldDescription = p_ParticipantsDT.Rows[participateNo][&quot;FieldDescription&quot;].ToString();&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;//MessageBox.Show(&quot;MergeSignTags - FieldType:&quot;+FieldType);&#xA;&#x9;&#x9;&#x9;&#x9;//MessageBox.Show(&quot;MergeSignTags - MergeFieldName:&quot;+MergeFieldName + &quot;To Participate: &quot;+participateNo.ToString());&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;                string MergedTag = TagTemplate;&#xA;&#x9;&#x9;&#x9;&#x9;rng.Find.ClearFormatting();&#xA;&#x9;&#x9;&#x9;&#x9;rng.Find.Forward = true;&#xA;&#x9;&#x9;&#x9;&#x9;//MessageBox.Show(rng.Find.Wrap.ToString());&#xA;&#x9;&#x9;&#x9;&#x9;rng.Find.Wrap = WdFindWrap.wdFindStop;&#xA;&#x9;&#x9;&#x9;&#x9;rng.Find.Text = TagTemplate;&#xA;&#xA;            rng.Find.Execute(&#xA;                ref missing, ref missing, ref missing, ref missing, ref missing,&#xA;                ref missing, ref missing, ref missing, ref missing, ref missing,&#xA;                ref missing, ref missing, ref missing, ref missing, ref missing);&#xA;&#xA;            while (rng.Find.Found)&#xA;            {&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;                //NoOfMergeFiledsForPerticipate++;&#xA;&#x9;&#x9;&#x9;&#x9;//MessageBox.Show(&quot;MergeSignTags - NoOfMergeFiledsForPerticipate: &quot;+NoOfMergeFiledsForPerticipate.ToString());&#xA;&#x9;&#x9;&#x9;&#x9;MergedTag = TagTemplate;&#xA;&#x9;&#x9;&#x9;&#x9;MergedTag = MergedTag.Replace(&quot;(n)&quot;, &quot;_&quot;+NoOfMergeFiledsForPerticipate.ToString()+&quot;_&quot;+p_DocumentCounter.ToString()).Replace(&quot;(TZ)&quot;, id);&#xA;&#x9;&#x9;&#x9;&#x9;//Add Field Row&#xA;&#x9;&#x9;&#x9;&#x9;myDataRow = ParticipantsFieldsToSignDT.NewRow();&#xA;                myDataRow[&quot;id&quot;] = id;&#xA;                myDataRow[&quot;FieldName&quot;] = MergedTag;&#xA;&#x9;&#x9;&#x9;&#x9;myDataRow[&quot;FieldType&quot;]=FieldType;&#xA;&#x9;&#x9;&#x9;&#x9;if (FieldDescription!=&quot;&quot;)&#xA;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;NoOfDescriptionFiledsForPerticipate++;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;FieldDescription = p_ParticipantsDT.Rows[participateNo][&quot;FieldDescription&quot;].ToString();&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;FieldDescription = FieldDescription.Replace(&quot;(n)&quot;, &quot;_&quot;+NoOfDescriptionFiledsForPerticipate.ToString()); &#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;myDataRow[&quot;FieldDescription&quot;]=FieldDescription;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;                //myDataRow[&quot;FieldType&quot;] = &quot;{Sign&lt;n>_&lt;TZ>}&quot;;&#xA;&#x9;&#x9;&#x9;&#x9;ParticipantsFieldsToSignDT.Rows.Add(myDataRow);&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;                &#xA;                rng.Find.Execute(&#xA;                ref missing, ref missing, ref missing, ref missing, ref missing,&#xA;                ref missing, ref missing, ref missing, ref missing, ref missing,&#xA;                ref missing, ref missing, ref missing, ref missing, ref missing);&#xA;&#x9;&#x9;&#x9;&#x9;//*** Replace all MegeFields with tag&#xA;&#x9;&#x9;&#x9;&#x9;//MessageBox.Show(&quot;MergeSignTags;Call FindAndReplace Parameters:TagTemplate - &quot;+ TagTemplate+&quot; MergedTag - &quot;+MergedTag);&#xA;&#x9;&#x9;&#x9;&#x9;FindAndReplace(p_wordApplication,TagTemplate,MergedTag,ref NoOfMergeFiledsForPerticipate);&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;            }&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;                          //  MergedTag = MergedTag.Replace(&quot;(n)&quot;, NoOfMergeFiledsForPerticipate.ToString()).Replace(&quot;(TZ)&quot;, id.ToString());&#xA;                        //    FindAndReplace(p_wordApplication,TagTemplate,MergedTag);&#xA;          }&#xA;&#x9;&#x9;&#x9;//MessageBox.Show(&quot;ParticipantsFieldsToSignDT Rows: &quot;+ParticipantsFieldsToSignDT.Rows.Count.ToString());&#xA;&#x9;&#x9;&#x9;return ParticipantsFieldsToSignDT;&#xA;&#x9;}&#xA;&#x9;public static void FindAndReplace(Microsoft.Office.Interop.Word.Application p_wordApplication,object findText, object replaceWithText,ref int p_NoOfMergeFiledsForPerticipate)&#xA;    {&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;//MessageBox.Show(&quot;No of Show: &quot;+p_NoOfMergeFiledsForPerticipate.ToString());&#xA;&#x9;&#x9;&#x9;//MessageBox.Show(&quot;replaceWithText: &quot;+replaceWithText);&#xA;            //options&#xA;            object matchCase = false;&#xA;            object matchWholeWord = true;&#xA;            object matchWildCards = false;&#xA;            object matchSoundsLike = false;&#xA;            object matchAllWordForms = false;&#xA;            object forward = true;&#xA;            object format = false;&#xA;            object matchKashida = false;&#xA;            object matchDiacritics = false;&#xA;            object matchAlefHamza = false;&#xA;            object matchControl = false;&#xA;            object read_only = false;&#xA;            object visible = true;&#xA;            object replaceAll  = 1;&#xA;            object wrap = WdFindWrap.wdFindContinue;&#xA;            //execute find and replace&#xA;            p_wordApplication.Selection.Find.Execute(ref findText, ref matchCase, ref matchWholeWord,&#xA;                ref matchWildCards, ref matchSoundsLike, ref matchAllWordForms, ref forward, ref wrap, ref format, ref replaceWithText, ref replaceAll,&#xA;                ref matchKashida, ref matchDiacritics, ref matchAlefHamza, ref matchControl);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;//MessageBox.Show(&quot;Find and replace: &quot; +findText + &quot;with: &quot;+ replaceWithText);&#xA;&#x9;&#x9;&#x9;p_NoOfMergeFiledsForPerticipate++;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;    }&#xA;&#x9;public static System.Data.DataTable CreateParticipantsFieldsToSignDT()&#xA;&#x9;{&#xA;&#x9;&#x9;&#x9;try{&#xA;&#x9;&#x9;&#x9;System.Data.DataTable ParticipantsFieldsToSign = new System.Data.DataTable(&quot;ParticipantsFieldsToSign&quot;); &#xA;&#x9;&#x9;    System.Data.DataColumn dtColumn;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;// Create id column  &#xA;            dtColumn = new System.Data.DataColumn();&#xA;            dtColumn.DataType = typeof(String);&#xA;            dtColumn.ColumnName = &quot;id&quot;;&#xA;            // Add column to the DataColumnCollection.  &#xA;            ParticipantsFieldsToSign.Columns.Add(dtColumn);&#xA;&#xA;            // Create FieldName column.    &#xA;            dtColumn = new System.Data.DataColumn();&#xA;            dtColumn.DataType = typeof(String);&#xA;            dtColumn.ColumnName = &quot;FieldName&quot;;&#xA;            /// Add column to the DataColumnCollection.  &#xA;            ParticipantsFieldsToSign.Columns.Add(dtColumn);&#xA;&#x9;&#x9;&#x9; // Create Type column.  &#xA;&#x9;&#x9;&#x9;dtColumn = new System.Data.DataColumn();&#xA;            dtColumn.DataType = typeof(String);&#xA;            dtColumn.ColumnName = &quot;FieldType&quot;;&#xA;            /// Add column to the DataColumnCollection.  &#xA;            ParticipantsFieldsToSign.Columns.Add(dtColumn);&#xA;&#x9;&#x9;&#x9;// Create IsMandatory column.  &#xA;&#x9;&#x9;&#x9;dtColumn = new System.Data.DataColumn();&#xA;            dtColumn.DataType = typeof(bool);&#xA;            dtColumn.ColumnName = &quot;IsMandatory&quot;;&#xA;            /// Add column to the DataColumnCollection.  &#xA;            ParticipantsFieldsToSign.Columns.Add(dtColumn);&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;// Create FieldDescription column  &#xA;            dtColumn = new System.Data.DataColumn();&#xA;            dtColumn.DataType = typeof(String);&#xA;            dtColumn.ColumnName = &quot;FieldDescription&quot;;&#xA;            // Add column to the DataColumnCollection.  &#xA;            ParticipantsFieldsToSign.Columns.Add(dtColumn);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;return ParticipantsFieldsToSign;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;catch (Exception ex) { &#xA;&#x9;&#x9;&#x9;&#x9;MessageBox.Show(&quot;Error creating colums&quot;);&#xA;&#x9;&#x9;&#x9;&#x9;throw ex; }&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;}&#xA;}&#xA;"/>
+                  <CompiledCode val="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EgISAhICEgISAhICbykAAAomBBEIEQsSBSgEAAAGEQZvJAAACm8xAAAKOuf+//8RBBdYEwQRBAJvIAAACm8yAAAKP8f9//8GKgAAABMwEACaAAAABAAAERaMKQAAAQoXjCkAAAELFowpAAABDBaMKQAAAQ0WjCkAAAETBBeMKQAAARMFFowpAAABEwYWjCkAAAETBxaMKQAAARMIFowpAAABEwkWjCkAAAETCheMFgAAARMLF4wnAAABEwwCbzMAAApvNAAACg8BEgASARICEgMSBBIFEgwSBg8CEgsSBxIIEgkSCm8pAAAKJgUlShdYVCoAABswAgAAAQAABQAAEXKzAABwczUAAAoKczYAAAoLB9AfAAABKDcAAApvOAAACgdyFQAAcG85AAAKBm86AAAKB287AAAKczYAAAoLB9AfAAABKDcAAApvOAAACgdynQAAcG85AAAKBm86AAAKB287AAAKczYAAAoLB9AfAAABKDcAAApvOAAACgdyUQAAcG85AAAKBm86AAAKB287AAAKczYAAAoLB9ApAAABKDcAAApvOAAACgdy5QAAcG85AAAKBm86AAAKB287AAAKczYAAAoLB9AfAAABKDcAAApvOAAACgdyZQAAcG85AAAKBm86AAAKB287AAAKBg3eDgxy/QAAcCgeAAAKJgh6CSoBEAAAAAAAAPDwAA4eAAABQlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAANAQAACN+AACgBAAAYAYAACNTdHJpbmdzAAAAAAALAAAsAQAAI1VTACwMAAAQAAAAI0dVSUQAAAA8DAAAIAIAACNCbG9iAAAAAAAAAAIAAAFHFQIACQAAAAD6JTMAFgAAAQAAAC0AAAACAAAABQAAABMAAAA7AAAAAgAAAAUAAAABAAAABgAAAAAACgABAAAAAAAGAC8AKAAKAEIANgAOAG8AUQAOAIYAUQAGAPIB0gEGABgC0gEOAD8CUQAOAFACUQAOAF0CUQAGAIgCKAASAKsCngIGAM0CwwIOAOICUQAGAI0C+gIKABcDNgAOADEDUQAOADsDUQAOAEoDUQAOAF4DUQAOAGwDUQAOAHkDUQAGAKUDKAASAMEDsQMSAMsDsQMSAPcDngIWAB0ECgQGAB0ECgQSAEMEngIGAFwEKAAGAHoEKAAGAJAEKAAaALMEngQaAL4EngQSANAEsQMOAOMEUQAKAPUENgAKABAFNgAOACoFUQAOAFQFUQAKAK0FNgAGANIFKAAOANoFUQAKAPIFNgAGAP0FKAAKAD0GNgAAAAAAAQAAAAAAAQABAIEBEAAXAAAABQABAAEAUCAAAAAAlgBMAAoAAQCEIAAAAACWAHsAHwAGAPQiAAAAAJYAjwAtAAwAVCUAAAAAlgCdADkAEAD8JQAAAACWAKwAQwAUAAAAAQDNAAAAAgDlAAAAAwD6AAAABAANAQAABQAZAQAAAQAqAQAAAgA8AQAAAwBJAQAABABWAQAABQBnAQAABgAZAQAAAQAZAQAAAgB4AQAAAwAqAQAABACHAQAAAQAqAQAAAgCZAQAAAwCiAQAABACyASkAEgJIADEAEgJNADkAEgJNABEAEgJNAEEAZQJRAEkAcQJWAFEAjQJiAFkAEgJNAEEAtwJWAGEA0gJuAEEA7AJ0AHEADAN5AGkAEgN9ABEAKwOiAIEAkQOrAIEAqwPEALkAEgPOAFkA3wPWAFkA6wNIAFkAAATaAMkAKQTfANkANwTkAFkASwToANkAUwTvAOkAaARNAFkAcATzAEEAdQTEAPEAhAT4APkAlwRuAAEBywT8AIEA6QQ5AREABwU/ASEBGAVFASkBGAVMAQkAIQX4ABkBLwVRATEBOAVNADEBSAVWADEBXwVXATEBaAXzADEBcQVeAbEAIQX4APkAlwSAAfkAeQWIAREAgQWOASkBiAWUAfkAkQWaASEBnwWgATEBowXvAEEByAXWAEEA5AW7AVEBLwVRAREAEgLzAFkBEgJNAFEADwbRAVkBIQbZAVkBLgbzABEAUgbfAWkBnwXlAS4ACwD4AS4AEwABAlsAAwGnAcEB7AEEgAAAAAAAAAAAAAAAAAAAAAA2AgAABAAAAAAAAAAAAAAAAQAfAAAAAAAEAAAAAAAAAAAAAAABADYAAAAAAA8AAAAAAAAAAAAAABYAUQAAAAAAAQAgADAKAAAAAAAAZQCVAgAAAAACAAAAAAAAAAAAAAABAB8AAAAAAAIAAAAAAAAAAAAAAAEAngQAAAAAAAAAPE1vZHVsZT4AdDNqMHNuZ2guZGxsAFNuaXBwZXQAbXNjb3JsaWIAU3lzdGVtAE9iamVjdABTeXN0ZW0uRGF0YQBEYXRhVGFibGUAZnVuYwBNaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuV29yZABBcHBsaWNhdGlvbgBNZXJnZVRvUERGAERvY3VtZW50AE1lcmdlU2lnblRhZ3MARmluZEFuZFJlcGxhY2UAQ3JlYXRlUGFydGljaXBhbnRzRmllbGRzVG9TaWduRFQAcF9BcnJheURvY3VtZW50c1RvTWVyZ2UAcF9NZXJnZWREb2N1bWVudFBhdGgAcF9Eb2N1bWVudEZvbnROYW1lAHBfcGFnZUJyZWFrAHBfUGFydGljaXBhbnRzRFQAcF93b3JkQXBwbGljYXRpb24AZmlsZXNUb01lcmdlAGZpbGVTYXZlUGF0aABpbnNlcnRQYWdlQnJlYWtzAERvY3VtZW50Rm9udE5hbWUAcF93b3JkRG9jdW1lbnQAcF9Eb2N1bWVudENvdW50ZXIAZmluZFRleHQAcmVwbGFjZVdpdGhUZXh0AHBfTm9PZk1lcmdlRmlsZWRzRm9yUGVydGljaXBhdGUAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAC5jdG9yAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAHQzajBzbmdoAEFwcGxpY2F0aW9uQ2xhc3MAX0FwcGxpY2F0aW9uAE9wdGlvbnMAZ2V0X09wdGlvbnMAc2V0X0NvbmZpcm1Db252ZXJzaW9ucwBUeXBlAE1pc3NpbmcAUGRmU2hhcnAAUGRmU2hhcnAuUGRmAFBkZkRvY3VtZW50AHNldF9WaXNpYmxlAFN5c3RlbS5JTwBQYXRoAENoYW5nZUV4dGVuc2lvbgBEb2N1bWVudHMAZ2V0X0RvY3VtZW50cwBTeXN0ZW0uUmVmbGVjdGlvbgBWYWx1ZQBPcGVuAE1pc3NpbmdTY2hlbWFBY3Rpb24ATWVyZ2UAX0RvY3VtZW50AFdkRXhwb3J0Rm9ybWF0AFdkRXhwb3J0T3B0aW1pemVGb3IAV2RFeHBvcnRSYW5nZQBXZEV4cG9ydEl0ZW0AV2RFeHBvcnRDcmVhdGVCb29rbWFya3MARXhwb3J0QXNGaXhlZEZvcm1hdABJbnQzMgBDbG9zZQBQZGZTaGFycC5QZGYuSU8AUGRmUmVhZGVyAFBkZkRvY3VtZW50T3Blbk1vZGUAZ2V0X1ZlcnNpb24Ac2V0X1ZlcnNpb24AUGRmUGFnZXMAZ2V0X1BhZ2VzAFN5c3RlbS5Db2xsZWN0aW9ucwBJRW51bWVyYXRvcgBHZXRFbnVtZXJhdG9yAGdldF9DdXJyZW50AFBkZlBhZ2UAQWRkUGFnZQBNb3ZlTmV4dABJRGlzcG9zYWJsZQBEaXNwb3NlAFNhdmUAUXVpdABFeGNlcHRpb24AZ2V0X01lc3NhZ2UAU3RyaW5nAENvbmNhdABTeXN0ZW0uV2luZG93cy5Gb3JtcwBNZXNzYWdlQm94AERpYWxvZ1Jlc3VsdABTaG93AFBkZlJlYWRlckV4Y2VwdGlvbgBSYW5nZQBnZXRfQ29udGVudABEYXRhUm93Q29sbGVjdGlvbgBnZXRfUm93cwBEYXRhUm93AGdldF9JdGVtAFRvU3RyaW5nAEZpbmQAZ2V0X0ZpbmQAQ2xlYXJGb3JtYXR0aW5nAHNldF9Gb3J3YXJkAFdkRmluZFdyYXAAc2V0X1dyYXAAc2V0X1RleHQARXhlY3V0ZQBSZXBsYWNlAE5ld1JvdwBzZXRfSXRlbQBvcF9JbmVxdWFsaXR5AEFkZABnZXRfRm91bmQASW50ZXJuYWxEYXRhQ29sbGVjdGlvbkJhc2UAZ2V0X0NvdW50AEJvb2xlYW4AU2VsZWN0aW9uAGdldF9TZWxlY3Rpb24ARGF0YUNvbHVtbgBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBzZXRfRGF0YVR5cGUAc2V0X0NvbHVtbk5hbWUARGF0YUNvbHVtbkNvbGxlY3Rpb24AZ2V0X0NvbHVtbnMAAAAAB3AAZABmAAALRQByAHIAOgAgAAAFaQBkAAAdTQBlAHIAZwBlAEYAaQBlAGwAZABOAGEAbQBlAAAXVABhAGcAVABlAG0AcABsAGEAdABlAAATRgBpAGUAbABkAFQAeQBwAGUAACFGAGkAZQBsAGQARABlAHMAYwByAGkAcAB0AGkAbwBuAAAHKABuACkAAANfAAAJKABUAFoAKQAAE0YAaQBlAGwAZABOAGEAbQBlAAABADFQAGEAcgB0AGkAYwBpAHAAYQBuAHQAcwBGAGkAZQBsAGQAcwBUAG8AUwBpAGcAbgAAF0kAcwBNAGEAbgBkAGEAdABvAHIAeQAAK0UA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+                  <SnippetLanguage val="C"/>
+                  <ForCompactFramework val="N"/>
+                  <isGuiThreadExecution val="Y"/>
+                  <CompileTime HighDateTime="30907490" LowDateTime="2788642367"/>
+                  <AssemblyIds val="932965495,-882544573,-114124648,-812272197,"/>
+                  <RetainFocus val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="124">
+                  <Expression val="17"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="117" EndBlockSegment="117" FlowIsn="116" Type="L">
+                  <Condition Exp="15"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="118">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="5"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="16"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="117"/>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="36"/>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="11" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="1"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_isn="1" _last_test_id="1" id="1">
+            <PropertyList model="FORM_GUI0">
+              <Width id="23" val="200"/>
+              <Height id="24" val="41"/>
+              <TitleBar id="26"/>
+              <SystemMenu id="27"/>
+              <MinimizeButton id="28"/>
+              <MaximizeButton id="29"/>
+              <BorderStyle id="64" val="1"/>
+              <_Comment id="218"/>
+              <StartupPosition id="275" val="5"/>
+              <FormName id="311" valUnicode="מיזוג מסמכים לחתימה"/>
+              <PersistentFormState id="493"/>
+            </PropertyList>
+            <Control _test_id="1" id="1">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="מבצע איחוד מסמכים לחתימה..."/>
+                <X id="21" val="32"/>
+                <Y id="22" val="15"/>
+                <Width id="23" val="137"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="DNExceptionOccurred()"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="19">
+            <ExpSyntax val="DotNet.System.Int32"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="18">
+            <ExpSyntax val="{0,7}.Rows[0][0]"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="17">
+            <ExpSyntax val="DbDel('{742,-1}'DSOURCE,'')"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="16">
+            <ExpSyntax val="LoopCounter()"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="13">
+            <ExpSyntax val="{0,8}.Columns.Count.ToString()"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="14">
+            <ExpSyntax val="{0,8}.Rows.Count.ToString()"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="15">
+            <ExpSyntax val="LoopCounter()&lt;={0,8}.Rows.Count"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="{0,6}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="Prog()&amp;': '&amp;DNException().Message"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="DotNet.System.String[VecSize({0,1})]"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="LoopCounter()&lt;=VecSize({0,1})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="10">
+            <ExpSyntax val="DNSet({0,5}[LoopCounter()-1],VecGet({0,1},LoopCounter()))"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="12">
+            <ExpSyntax val="{0,7}.Rows.Count.ToString()"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+        </Expressions>
+        <Task MainProgram="N">
+          <Header Description="יצירת שדות למיזוג במסמך דוטנט" ISN_2="4" LastIsn="5" id="901">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="N"/>
+            <FormType val="N"/>
+            <DotNetObjectExists val="Y"/>
+            <LastModified _date="738028" _time="81156" date="26/08/2021" time="22:32:36"/>
+          </Header>
+          <ItemIsn val="15"/>
+          <Resource>
+            <DB id="1">
+              <DataObject comp="-1" obj="742"/>
+              <Access val="W"/>
+              <Share val="W"/>
+              <Open val="N"/>
+              <Cache val="Y"/>
+              <IdentifyRowModifications val="84"/>
+            </DB>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Column val="1"/>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1" obj="742"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="A"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="T"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="P"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="N"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="Y"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="1" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="1" IDX="1" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="3" FlowIsn="14" id="3">
+                    <Column val="1"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <REAL_VNAME_TXT val="id"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="7" FlowIsn="18" id="7">
+                    <Column val="6"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <REAL_VNAME_TXT val="MergeFieldName"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="8" FlowIsn="19" id="8">
+                    <Column val="2"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <REAL_VNAME_TXT val="TagTemplate"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="12" FlowIsn="31" id="12">
+                    <Column val="3"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <REAL_VNAME_TXT val="FieldType"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="15" FlowIsn="36" id="15">
+                    <Column val="5"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <REAL_VNAME_TXT val="FieldDescription"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="21">
+                    <Type val="1"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="4" propagate="78">
+              <Level val="T"/>
+              <Type val="S"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <Expanded val="1"/>
+              <LogicLines>
+                <LogicLine>
+                  <Remark FlowIsn="28">
+                    <Type val="2"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="29">
+                    <Parent val="1"/>
+                    <FieldID val="7"/>
+                    <WithValue val="5"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" Exp="2" FlowIsn="5" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TitleTxt="Warning" VR_DISP="B">
+                    <AppendToErrorLog val="N"/>
+                    <Condition Exp="3"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </STP>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="1">
+              <PropertyList model="FORM_GUI0">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="עעע"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression id="2">
+              <ExpSyntax val="Prog()&amp;': '&amp;DNException().Message"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="3">
+              <ExpSyntax val="DNExceptionOccurred()"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="5">
+              <ExpSyntax val="DataViewToDNDataTable (0,'id,MergeFieldName,TagTemplate,FieldType,FieldDescription','id,MergeFieldName,TagTemplate,FieldType,FieldDescription')"/>
+              <ExpAttribute val="O"/>
+            </Expression>
+          </Expressions>
+        </Task>
+        <Task MainProgram="N">
+          <Header Description="יצירת שדות מיזוג ממסמך מדוטנט" ISN_2="5" LastIsn="5" id="901">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <TSK_PARAMS val="1"/>
+              <ParametersAttributes>
+                <Attr MgAttr="N"/>
+              </ParametersAttributes>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="N"/>
+            <FormType val="N"/>
+            <DotNetObjectExists val="Y"/>
+            <LastModified _date="738028" _time="81507" date="26/08/2021" time="22:38:27"/>
+          </Header>
+          <ItemIsn val="8"/>
+          <Resource>
+            <DB id="1">
+              <DataObject comp="-1" obj="742"/>
+              <Access val="W"/>
+              <Share val="W"/>
+              <Open val="N"/>
+              <Cache val="Y"/>
+              <IdentifyRowModifications val="84"/>
+            </DB>
+            <Columns>
+              <Column id="2" name="פ-מונה">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                  <Picture id="157" valUnicode="9"/>
+                  <_Dec id="181"/>
+                  <_Whole id="182" val="9"/>
+                  <_Negative id="192"/>
+                  <_FieldStyle id="276" val="1"/>
+                </PropertyList>
+              </Column>
+            </Columns>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="A"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="W"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="N"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="Y"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="1" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="1" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="6" FlowIsn="9" id="6">
+                    <Column val="2"/>
+                    <Type val="V"/>
+                    <IsParameter val="Y"/>
+                    <INT_RCMP_INFO>
+                      <v>3</v>
+                      <v>6</v>
+                      <v>5</v>
+                      <v>16</v>
+                      <v>7</v>
+                    </INT_RCMP_INFO>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="3" Key="1" Mode="W" SortType="4" VIEW="2" VIEWS="6">
+                    <DB comp="-1" obj="742"/>
+                    <Expanded val="1"/>
+                    <Condition val="Y"/>
+                  </LNK>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="3" FlowIsn="6" id="3">
+                    <ASS val="1"/>
+                    <Column val="1"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="1" MIN="1"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="8" FlowIsn="20" id="8">
+                    <Column val="6"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="2" FlowIsn="5" id="2">
+                    <ASS val="2"/>
+                    <Column val="2"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <Locate MAX="2" MIN="2"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="7" FlowIsn="16" id="7">
+                    <ASS val="4"/>
+                    <Column val="5"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="4" FlowIsn="7" id="4">
+                    <ASS val="3"/>
+                    <Column val="3"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="5" FlowIsn="8" id="5">
+                    <Column val="4"/>
+                    <Type val="R"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <END_LINK FlowIsn="4"/>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="1">
+              <PropertyList model="FORM_GUI0">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="יצירת שדות מיזוג"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression id="1">
+              <ExpSyntax val="Val ({1,8}.Rows[{0,6}-1][0],'9')"/>
+              <ExpAttribute val="N"/>
+            </Expression>
+            <Expression id="3">
+              <ExpSyntax val="{1,8}.Rows[{0,6}-1][2].ToString()"/>
+              <ExpAttribute val="O"/>
+            </Expression>
+            <Expression id="2">
+              <ExpSyntax val="{1,8}.Rows[{0,6}-1][1].ToString()"/>
+              <ExpAttribute val="O"/>
+            </Expression>
+            <Expression id="4">
+              <ExpSyntax val="{1,8}.Rows[{0,6}-1]['FieldDescription'].ToString()"/>
+              <ExpAttribute val="O"/>
+            </Expression>
+          </Expressions>
+        </Task>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

@@ -1,0 +1,2298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13021"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="טבלת בקרה" ISN_2="1" LastIsn="1" id="16">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <ParametersAttributes/>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="O"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="N"/>
+          <LastModified _date="738398" _time="30955" date="31/08/2022" time="08:35:55"/>
+        </Header>
+        <ItemIsn val="49"/>
+        <Resource>
+          <DB id="1">
+            <DataObject comp="-1" obj="1"/>
+            <Access val="W"/>
+            <Share val="W"/>
+            <Open val="N"/>
+            <Cache val="N"/>
+            <IdentifyRowModifications val="84"/>
+          </DB>
+          <DB id="2">
+            <DataObject comp="-1" obj="8"/>
+            <Access val="R"/>
+            <Share val="W"/>
+            <Open val="N"/>
+            <Cache val="N"/>
+            <IdentifyRowModifications val="84"/>
+          </DB>
+          <Columns>
+            <Column id="1" name="לקוח משלם קיים">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="4" name="קוד משתמש סיסמת מנהל">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="6"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="6"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="2" name="CHG_REASON_ימי עסקים לפני הודע">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2"/>
+                <StoredAs id="173" val="1"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192"/>
+              </PropertyList>
+            </Column>
+            <Column id="3" name="CHG_PRV_ימי עסקים לפני הודעת ת">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2"/>
+                <NullAllowed id="166" val="Y"/>
+                <StoredAs id="173" val="4"/>
+                <Size id="174" val="2"/>
+                <Definition id="175" val="2"/>
+                <DbColumnName id="178" val="PAYMENT_NOTICE_DAYS"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192"/>
+                <_Flip id="194"/>
+                <_FieldPhysical Name="PAYMENT_NOTICE_DAYS" PIC_U="2" Size="2" allowed_null="N" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+                <PartOfDatetime id="244"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="5" name="CHG_REASON_שעת שליחת הודעות תש">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2"/>
+                <StoredAs id="173" val="1"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192"/>
+              </PropertyList>
+            </Column>
+            <Column id="6" name="CHG_PRV_שעת שליחת הודעות תשלום">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_TIME" id="1"/>
+                <NullAllowed id="166" val="Y"/>
+                <StoredAs id="173" val="24"/>
+                <Size id="174" val="6"/>
+                <Definition id="175" val="2"/>
+                <DbColumnName id="178" val="PAYMENT_NOTICE_HOUR"/>
+                <_Flip id="194"/>
+                <_FieldPhysical Name="PAYMENT_NOTICE_HOUR" PIC_U="HH:MM:SS" Size="6" allowed_null="Y" attribute="T" context_cookies="Y" database_definition="2" id="231" storage="24" translate="1"/>
+                <PartOfDatetime id="244"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="7" name="CHG_REASON_הודעות תשלום מושהות">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2"/>
+                <StoredAs id="173" val="1"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192"/>
+              </PropertyList>
+            </Column>
+            <Column id="8" name="CHG_PRV_הודעות תשלום מושהות">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <GuiDisplay id="158">
+                  <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+                </GuiDisplay>
+                <GuiDisplayTable id="159">
+                  <PropertyList model="CTRL_GUI0_CHECKBOX"/>
+                </GuiDisplayTable>
+                <NullAllowed id="166" val="Y"/>
+                <StoredAs id="173" val="15"/>
+                <Size id="174" val="1"/>
+                <Definition id="175" val="2"/>
+                <DbColumnName id="178" val="PAYMENT_NOTICE_SUSPENDED"/>
+                <_Flip id="194"/>
+                <_FieldPhysical Name="PAYMENT_NOTICE_SUSPENDED" PIC_U="5" Size="1" allowed_null="Y" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="15" translate="1"/>
+                <PartOfDatetime id="244"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Column val="1"/>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1" obj="1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="N"/>
+          <EvaluateEndCondition val="B"/>
+          <InitialMode val="E"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange LastIsn="2"/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="R"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="N"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="P"/>
+            <TransactionBegin val="N"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="N"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="Y"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="Y"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="2" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2" IDX="1" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="1" FlowIsn="3" id="1">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <Range MAX="2" MIN="2"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="26" FlowIsn="4" id="26">
+                  <Column val="60"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="50"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="27" FlowIsn="30" id="27">
+                  <Column val="61"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="52"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="38" FlowIsn="108" id="38">
+                  <Column val="69"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="69"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="39" FlowIsn="109" id="39">
+                  <Column val="70"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="71"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="31" FlowIsn="62" id="31">
+                  <Column val="23"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="62"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2" FlowIsn="5" id="2">
+                  <Column val="38"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="3"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="3" FlowIsn="6" id="3">
+                  <Column val="40"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="7"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="4" FlowIsn="7" id="4">
+                  <Column val="39"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="11"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="5" FlowIsn="8" id="5">
+                  <Column val="41"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="15"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="6" FlowIsn="9" id="6">
+                  <Column val="48"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="19"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="7" FlowIsn="10" id="7">
+                  <Column val="13"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="23"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="8" FlowIsn="11" id="8">
+                  <Column val="50"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="28"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="9" FlowIsn="12" id="9">
+                  <Column val="51"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="30"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="10" FlowIsn="13" id="10">
+                  <Column val="57"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="34"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="11" FlowIsn="14" id="11">
+                  <Column val="58"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="36"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="12" FlowIsn="15" id="12">
+                  <Column val="59"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="38"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="13" FlowIsn="16" id="13">
+                  <Column val="42"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="14" FlowIsn="17" id="14">
+                  <Column val="43"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="5"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="15" FlowIsn="18" id="15">
+                  <Column val="45"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="9"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="16" FlowIsn="19" id="16">
+                  <Column val="47"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="13"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="17" FlowIsn="20" id="17">
+                  <Column val="46"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="17"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="18" FlowIsn="21" id="18">
+                  <Column val="44"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="21"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="19" FlowIsn="22" id="19">
+                  <Column val="15"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="26"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="20" FlowIsn="23" id="20">
+                  <Column val="52"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="40"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="21" FlowIsn="24" id="21">
+                  <Column val="53"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="42"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="22" FlowIsn="25" id="22">
+                  <Column val="54"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="44"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="23" FlowIsn="26" id="23">
+                  <Column val="55"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="46"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="24" FlowIsn="27" id="24">
+                  <Column val="56"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="48"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="25" FlowIsn="28" id="25">
+                  <Column val="49"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="78"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="28" FlowIsn="56" id="28">
+                  <Column val="63"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="54"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="29" FlowIsn="58" id="29">
+                  <Column val="64"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="58"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="30" FlowIsn="60" id="30">
+                  <Column val="65"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="59"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="32" FlowIsn="91" id="32">
+                  <Column val="66"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="64"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="33" FlowIsn="93" id="33">
+                  <Column val="67"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="65"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="34" FlowIsn="95" id="34">
+                  <Column val="68"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <INT_RCMP_INFO>
+                    <v>97</v>
+                  </INT_RCMP_INFO>
+                  <_DitIndexForToolkit val="67"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="37" FlowIsn="101" id="37">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FieldID="37" FlowIsn="97" Key="3" Mode="R" SortType="98" VIEW="38" VIEWS="2">
+                  <DB comp="-1" obj="8"/>
+                  <Expanded val="1"/>
+                  <Condition val="Y"/>
+                </LNK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="35" FlowIsn="99" id="35">
+                  <Column val="3"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <Locate MAX="5" MIN="5"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="36" FlowIsn="100" id="36">
+                  <Column val="2"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <END_LINK FlowIsn="98"/>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="40" FlowIsn="148" id="40">
+                  <Column val="72"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="74"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="41" FlowIsn="149" id="41">
+                  <Column val="71"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="76"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="42" FlowIsn="153" id="42">
+                  <Column val="73"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="79"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="45" FlowIsn="160" id="45">
+                  <Column val="4"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="R"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="29" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="שדה הלוואות עם/בלי ריבית שונה, נא צא וכנס מחדש!" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition Exp="3"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="4" propagate="78">
+            <Level val="C"/>
+            <Type val="V"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="מספר משלם ערבות מדינה_0001"/>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="102" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="לקוח משלם אינו קיים. יש ליצור המשלם כלקוח או לבחור קיים" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="6"/>
+                  <Modifier val="B"/>
+                  <Direction val="F"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="5" propagate="78">
+            <Level val="C"/>
+            <Type val="V"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <TXT val="שעת שליחת הודעות גביה_0001"/>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="152" IMG_DEF_CHG="N" Image="C" Mode="E" TTL_DEF_CHG="N" TXT="אנא הגדר/י במרווחים של חצי שעה" TitleTxt="Error" VR_DISP="B">
+                  <AppendToErrorLog val="Y"/>
+                  <Condition Exp="7"/>
+                  <Modifier val="B"/>
+                  <Direction val="F"/>
+                </STP>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="6" propagate="78">
+            <Level val="V"/>
+            <Type val="C"/>
+            <FieldID val="40"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="-10"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="43" FlowIsn="157" id="43">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="44" FlowIsn="158" id="44">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="159">
+                  <OperationType val="P"/>
+                  <TaskID comp="-1" obj="684"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="45"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="161">
+                  <FieldID val="40"/>
+                  <WithValue val="8"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="9"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="7" propagate="78">
+            <Level val="V"/>
+            <Type val="C"/>
+            <FieldID val="41"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="-10"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="46" FlowIsn="168" id="46">
+                  <Column val="5"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="47" FlowIsn="169" id="47">
+                  <Column val="6"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="170">
+                  <OperationType val="P"/>
+                  <TaskID comp="-1" obj="684"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="45"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="171">
+                  <FieldID val="41"/>
+                  <WithValue val="11"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="9"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="8" propagate="78">
+            <Level val="V"/>
+            <Type val="C"/>
+            <FieldID val="42"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="-10"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Select FieldID="48" FlowIsn="172" id="48">
+                  <Column val="7"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="49" FlowIsn="173" id="49">
+                  <Column val="8"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="174">
+                  <OperationType val="P"/>
+                  <TaskID comp="-1" obj="684"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Variable val="45"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="175">
+                  <FieldID val="42"/>
+                  <WithValue val="12"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="9"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_isn="82" _last_test_id="122" id="1">
+            <PropertyList model="FORM_GUI0">
+              <X id="21" val="2"/>
+              <Y id="22" val="2"/>
+              <Width id="23" val="625"/>
+              <Height id="24" val="340"/>
+              <MinimizeButton id="28"/>
+              <MaximizeButton id="29"/>
+              <ShowGrid id="37"/>
+              <GridX id="38" val="1"/>
+              <GridY id="39" val="2"/>
+              <Color id="51" val="4"/>
+              <_WindowSort id="133"/>
+              <_Comment id="218"/>
+              <StartupPosition id="275" val="5"/>
+              <FormName id="311" valUnicode="טבלת בקרה"/>
+              <_TabbingOrder id="318" val="2"/>
+              <WindowType id="358" val="1"/>
+              <PersistentFormState id="493"/>
+            </PropertyList>
+            <Control PDOD="5" _test_id="19" id="1">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="13"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="21"/>
+                <Y id="22" val="88"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="13" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - אסמ' 3 המחאת הלו_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="20"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="20" id="2">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="קוד תמחיר - המחאת הלוואה :"/>
+                <X id="21" val="143"/>
+                <Y id="22" val="88"/>
+                <Width id="23" val="139"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="12" id="3">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="2"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="353"/>
+                <Y id="22" val="89"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="2" id="43"/>
+                <ControlName id="46" val="סה&quot;כ נתרם להלוואות $_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="9"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="11" id="4">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="כרטיס &quot;דמי טיפול&quot; :"/>
+                <X id="21" val="426"/>
+                <Y id="22" val="89"/>
+                <Width id="23" val="162"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="21" id="5">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="14"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="21"/>
+                <Y id="22" val="103"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="14" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - אסמ' 3 המחאת מענ_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="21"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="22" id="6">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="קוד תמחיר - המחאת מענק :"/>
+                <X id="21" val="143"/>
+                <Y id="22" val="103"/>
+                <Width id="23" val="139"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="13" id="7">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="353"/>
+                <Y id="22" val="103"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="3" id="43"/>
+                <ControlName id="46" val="סה&quot;כ נתרם למענקים $_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="10"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="14" id="8">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="כרטיס &quot;קופה&quot; :"/>
+                <X id="21" val="426"/>
+                <Y id="22" val="103"/>
+                <Width id="23" val="162"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="23" id="9">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="15"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="21"/>
+                <Y id="22" val="117"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="15" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - אסמ' 3 החזר הלוו_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="22"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="24" id="10">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="קוד תמחיר - החזר הלוואה :"/>
+                <X id="21" val="143"/>
+                <Y id="22" val="117"/>
+                <Width id="23" val="139"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="15" id="11">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="4"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="353"/>
+                <Y id="22" val="117"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="4" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - כרטיס מעבר בנקים_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="11"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="16" id="12">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="כרטיס &quot;מעבר בנקים&quot; :"/>
+                <X id="21" val="426"/>
+                <Y id="22" val="117"/>
+                <Width id="23" val="162"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="25" id="13">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="16"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="21"/>
+                <Y id="22" val="132"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="16" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - אסמ' 3 ה.ק. חוזר_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="23"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="26" id="14">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="קוד תמחיר - תקבול חוזר :"/>
+                <X id="21" val="143"/>
+                <Y id="22" val="132"/>
+                <Width id="23" val="139"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="17" id="15">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="5"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="353"/>
+                <Y id="22" val="133"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="5" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - כרטיס בנק דואר_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="12"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="18" id="16">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="כרטיס &quot;בנק דואר&quot; :"/>
+                <X id="21" val="426"/>
+                <Y id="22" val="133"/>
+                <Width id="23" val="162"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="27" id="17">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="17"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="21"/>
+                <Y id="22" val="147"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="17" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - אסמ' 3 תרומת מענ_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="24"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="28" id="18">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="קוד תמחיר - תרומה למענק :"/>
+                <X id="21" val="143"/>
+                <Y id="22" val="147"/>
+                <Width id="23" val="139"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="38" id="19">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="6"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="353"/>
+                <Y id="22" val="147"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="6" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - ק.תמחיר המחאת הל_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="13"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="37" id="20">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="כרטיס &quot;בנק הוצל&quot;פ&quot; :"/>
+                <X id="21" val="426"/>
+                <Y id="22" val="147"/>
+                <Width id="23" val="162"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="29" id="21">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="18"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="21"/>
+                <Y id="22" val="162"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="18" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - אסמ' 2 תרומה לקר_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="25"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="30" id="22">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="אסמכתא 2 - תרומה להלוואות :"/>
+                <X id="21" val="143"/>
+                <Y id="22" val="162"/>
+                <Width id="23" val="139"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="130" _test_id="36" id="23">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="7"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="353"/>
+                <Y id="22" val="163"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="7" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - עמלות בנק דואר_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <Format id="82" valUnicode="H8"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="14"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="35" id="24">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="כרטיס &quot;עמלות בנק דואר&quot; :"/>
+                <X id="21" val="426"/>
+                <Y id="22" val="163"/>
+                <Width id="23" val="162"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="32" id="25">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="קובץ ממשק הנהח&quot;ש :"/>
+                <X id="21" val="483"/>
+                <Y id="22" val="281"/>
+                <Width id="23" val="103"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="31" id="26">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="19"/>
+                </Model>
+                <Placement id="20" right="100"/>
+                <X id="21" val="198"/>
+                <Y id="22" val="283"/>
+                <Width id="23" val="224"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="19" id="43"/>
+                <ControlName id="46" val="שם קובץ העברה להנה&quot;ש_0001"/>
+                <Font id="50" val="1"/>
+                <Color id="51" val="2"/>
+                <HorizontalAlignment id="65" val="1"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="31"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+                <Border id="452" val="Y"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="40" id="27">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הלוואות עם/בלי ריבית :"/>
+                <X id="21" val="473"/>
+                <Y id="22" val="297"/>
+                <Width id="23" val="114"/>
+                <Height id="24" val="12"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="70" id="28">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="8"/>
+                </Model>
+                <X id="21" val="353"/>
+                <Y id="22" val="194"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="8" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש -  כרטיס הכנסות קרן"/>
+                <TabOrder id="314" val="15"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="71" id="29">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנהח&quot;ש -  כרטיס הכנסות קרן :"/>
+                <X id="21" val="426"/>
+                <Y id="22" val="193"/>
+                <Width id="23" val="162"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="72" id="30">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="9"/>
+                </Model>
+                <X id="21" val="353"/>
+                <Y id="22" val="209"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="9" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - כרטיס הכנסות ריבית"/>
+                <TabOrder id="314" val="16"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="73" id="31">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנהח&quot;ש - כרטיס עמלות :"/>
+                <X id="21" val="426"/>
+                <Y id="22" val="209"/>
+                <Width id="23" val="162"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="74" id="32">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="חשבונות למערכת הלוואות עם ריבית"/>
+                <X id="21" val="353"/>
+                <Y id="22" val="179"/>
+                <Width id="23" val="234"/>
+                <Height id="24" val="11"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+                <Line3D id="184"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="75" id="33">
+              <PropertyList model="CTRL_GUI0_LINE">
+                <X1 id="21" val="413"/>
+                <Y1 id="22" val="189"/>
+                <X2 id="23" val="174"/>
+                <Style id="63" val="1"/>
+                <LineWidth id="76" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="76" id="34">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="10"/>
+                </Model>
+                <X id="21" val="353"/>
+                <Y id="22" val="223"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="10" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - כרטיס דמי ניהול"/>
+                <TabOrder id="314" val="17"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="77" id="35">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנהח&quot;ש - כרטיס דמי ניהול :"/>
+                <X id="21" val="443"/>
+                <Y id="22" val="223"/>
+                <Width id="23" val="145"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="78" id="36">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="11"/>
+                </Model>
+                <X id="21" val="353"/>
+                <Y id="22" val="239"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="11" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - כרטיס בטחון"/>
+                <TabOrder id="314" val="18"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="79" id="37">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנהח&quot;ש - כרטיס בטחון :"/>
+                <X id="21" val="473"/>
+                <Y id="22" val="239"/>
+                <Width id="23" val="116"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="80" id="38">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="12"/>
+                </Model>
+                <X id="21" val="353"/>
+                <Y id="22" val="253"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="12" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - כרטיס החזרים למשקיע"/>
+                <TabOrder id="314" val="19"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="81" id="39">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנהח&quot;ש - כרטיס החזרים למשקיע :"/>
+                <X id="21" val="423"/>
+                <Y id="22" val="254"/>
+                <Width id="23" val="166"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="82" id="40">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="20"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="194"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="20" id="43"/>
+                <ControlName id="46" val="הנח&quot;ש ק. תמחיר להכנסות קרן"/>
+                <TabOrder id="314" val="26"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="83" id="41">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנח&quot;ש ק. תמחיר להכנסות קרן :"/>
+                <X id="21" val="115"/>
+                <Y id="22" val="194"/>
+                <Width id="23" val="167"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="84" id="42">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="21"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="209"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="21" id="43"/>
+                <ControlName id="46" val="הנח&quot;ש ק. תמחיר להכנסות ריבית"/>
+                <TabOrder id="314" val="27"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="85" id="43">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנח&quot;ש ק. תמחיר לעמלות :"/>
+                <X id="21" val="107"/>
+                <Y id="22" val="209"/>
+                <Width id="23" val="175"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="86" id="44">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="22"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="224"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="22" id="43"/>
+                <ControlName id="46" val="הנח&quot;ש ק. תמחיר לדמי ניהול"/>
+                <TabOrder id="314" val="28"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="87" id="45">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנח&quot;ש ק. תמחיר לדמי ניהול :"/>
+                <X id="21" val="123"/>
+                <Y id="22" val="224"/>
+                <Width id="23" val="159"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="88" id="46">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="23"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="239"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="23" id="43"/>
+                <ControlName id="46" val="הנח&quot;ש ק. תמחיר לבטחון"/>
+                <TabOrder id="314" val="29"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="89" id="47">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנח&quot;ש ק. תמחיר לבטחון :"/>
+                <X id="21" val="135"/>
+                <Y id="22" val="239"/>
+                <Width id="23" val="147"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="90" id="48">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="24"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="254"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="24" id="43"/>
+                <ControlName id="46" val="הנח&quot;ש ק. תמחיר להחזר למשקיע"/>
+                <TabOrder id="314" val="30"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="91" id="49">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנח&quot;ש ק. תמחיר להחזר למשקיע :"/>
+                <X id="21" val="106"/>
+                <Y id="22" val="254"/>
+                <Width id="23" val="176"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="92" id="52">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="26"/>
+                </Model>
+                <X id="21" val="96"/>
+                <Y id="22" val="5"/>
+                <Width id="23" val="412"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="26" id="43"/>
+                <ControlName id="46" val="לוגו ע"/>
+                <TabOrder id="314" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="93" id="53">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="לוגו בעברית"/>
+                <X id="21" val="521"/>
+                <Y id="22" val="5"/>
+                <Width id="23" val="66"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="94" id="54">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="27"/>
+                </Model>
+                <X id="21" val="96"/>
+                <Y id="22" val="18"/>
+                <Width id="23" val="412"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="27" id="43"/>
+                <ControlName id="46" val="לוגו א"/>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="95" id="55">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="לוגו באנגלית"/>
+                <X id="21" val="520"/>
+                <Y id="22" val="18"/>
+                <Width id="23" val="66"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="23" _test_id="96" id="56">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="28"/>
+                </Model>
+                <X id="21" val="426"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="49"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="28" id="43"/>
+                <ControlName id="46" val="סכום עמלת BDI_0001"/>
+                <MultiLineEdit id="71"/>
+                <TabOrder id="314" val="5"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="97" id="57">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="סכום עמלת BDI"/>
+                <X id="21" val="507"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="79"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="98" id="58">
+              <PropertyList model="CTRL_GUI0_LINE">
+                <Y1 id="22" val="84"/>
+                <X2 id="23" val="624"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="99" id="59">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנהח&quot;ש - כרטיס עמלת BDI"/>
+                <X id="21" val="423"/>
+                <Y id="22" val="268"/>
+                <Width id="23" val="166"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="100" id="60">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="29"/>
+                </Model>
+                <X id="21" val="353"/>
+                <Y id="22" val="268"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="29" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - כרטיס עמלת BDI_0001"/>
+                <TabOrder id="314" val="34"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="101" id="61">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="30"/>
+                </Model>
+                <X id="21" val="96"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="46"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="30" id="43"/>
+                <ControlName id="46" val="סכום הלוואה מקסימלי כערב מוגן"/>
+                <TabOrder id="314" val="7"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="102" id="62">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="סכום הלוואה מקסימלי כערב מוגן"/>
+                <X id="21" val="143"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="148"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="103" id="63">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="סכום עמלת חוזר"/>
+                <X id="21" val="353"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="69"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="20" _test_id="104" id="64">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="31"/>
+                </Model>
+                <X id="21" val="299"/>
+                <Y id="22" val="59"/>
+                <Width id="23" val="49"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="31" id="43"/>
+                <ControlName id="46" val="סכום עמלת חוזר בש&quot;ח_0001"/>
+                <MultiLineEdit id="71"/>
+                <TabOrder id="314" val="6"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="105" id="65">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="הנהח&quot;ש - כרטיס פקדון"/>
+                <X id="21" val="116"/>
+                <Y id="22" val="269"/>
+                <Width id="23" val="166"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="106" id="66">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="32"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="269"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="32" id="43"/>
+                <ControlName id="46" val="הנהח&quot;ש - כרטיס פקדון_0001"/>
+                <TabOrder id="314" val="35"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="1" _test_id="107" id="67">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="33"/>
+                </Model>
+                <X id="21" val="96"/>
+                <Y id="22" val="73"/>
+                <Width id="23" val="46"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="33" id="43"/>
+                <ControlName id="46" val="סכום  חודשי מינמלי החזר ה_0001"/>
+                <Tooltip Exp="4" id="56"/>
+                <MultiLineEdit id="71"/>
+                <TabOrder id="314" val="8"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="108" id="68">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="סכום תשלום חודשי מינימלי החזר הלוואה"/>
+                <X id="21" val="143"/>
+                <Y id="22" val="73"/>
+                <Width id="23" val="185"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="5" _test_id="109" id="69">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="34"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="298"/>
+                <Width id="23" val="68"/>
+                <Height id="24" val="11"/>
+                <Data FieldID="34" id="43"/>
+                <ControlName id="46" val="מספר משלם ערבות מדינה_0001"/>
+                <MultiLineEdit id="71"/>
+                <Format id="82" valUnicode="9Z"/>
+                <TabOrder id="314" val="36"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="110" id="70">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="מספר משלם (לקוח) - ערבות מדינה:"/>
+                <X id="21" val="106"/>
+                <Y id="22" val="298"/>
+                <Width id="23" val="176"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="2" _test_id="111" id="71">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="38"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="31"/>
+                <Width id="23" val="487"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="38" id="43"/>
+                <ControlName id="46" val="כתובת עברית_0001"/>
+                <TabOrder id="314" val="3"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="112" id="72">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="כתובת בעברית"/>
+                <X id="21" val="512"/>
+                <Y id="22" val="31"/>
+                <Width id="23" val="74"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="115" id="75">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="39"/>
+                </Model>
+                <X id="21" val="21"/>
+                <Y id="22" val="44"/>
+                <Width id="23" val="487"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="39" id="43"/>
+                <ControlName id="46" val="כתובת אנגלית_0001"/>
+                <TabOrder id="314" val="4"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="116" id="76">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="כתובת באנגלית"/>
+                <X id="21" val="512"/>
+                <Y id="22" val="44"/>
+                <Width id="23" val="74"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="117" id="77">
+              <PropertyList model="CTRL_GUI0_LINE">
+                <Y1 id="22" val="313"/>
+                <X2 id="23" val="624"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="1" _test_id="118" id="78">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="40"/>
+                </Model>
+                <X id="21" val="405"/>
+                <Y id="22" val="319"/>
+                <Width id="23" val="15"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="40" id="43"/>
+                <ControlName id="46" val="ימי עסקים לפני הודעת גביה_0001"/>
+                <MultiLineEdit id="71"/>
+                <TabOrder id="314" val="37"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="119" id="79">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="ימי עסקים לפני התראת גבית תשלום"/>
+                <X id="21" val="423"/>
+                <Y id="22" val="319"/>
+                <Width id="23" val="165"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="128" _test_id="120" id="80">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="41"/>
+                </Model>
+                <X id="21" val="229"/>
+                <Y id="22" val="320"/>
+                <Width id="23" val="41"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="41" id="43"/>
+                <ControlName id="46" val="שעת שליחת הודעות גביה_0001"/>
+                <MultiLineEdit id="71"/>
+                <Format id="82" valUnicode="HH:MM"/>
+                <TabOrder id="314" val="38"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="121" id="81">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="שעת משלוח התראת גביה"/>
+                <X id="21" val="274"/>
+                <Y id="22" val="320"/>
+                <Width id="23" val="117"/>
+                <Height id="24" val="9"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="192" _test_id="39" id="50">
+              <PropertyList model="CTRL_GUI0_COMBOBOX">
+                <X id="21" val="357"/>
+                <Y id="22" val="297"/>
+                <Width id="23" val="65"/>
+                <Height id="24" val="12"/>
+                <Data FieldID="25" id="43"/>
+                <ControlName id="46" val="הלוואות עם/בלי ריבית"/>
+                <Font id="50" val="82"/>
+                <Modifiable Exp="1" id="53"/>
+                <Style id="63" val="1"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="32"/>
+                <AllowParking id="315" val="Y"/>
+                <AllowedDirection id="317" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="192" _test_id="122" id="82">
+              <PropertyList model="CTRL_GUI0_CHECKBOX">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="42"/>
+                </Model>
+                <X id="21" val="96"/>
+                <Y id="22" val="319"/>
+                <Width id="23" val="121"/>
+                <Height id="24" val="12"/>
+                <Data FieldID="42" id="43"/>
+                <Text id="45" valUnicode=" הודעות תשלום מושהות"/>
+                <ControlName id="46" val="הודעות תשלום מושהות"/>
+                <Font id="50" val="82"/>
+                <Color id="51" val="4"/>
+                <TabOrder id="314" val="39"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="Rights ('{1,-1}'RIGHT)='TRUE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="1"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="3">
+            <ExpSyntax val="VarCurr ('{0,25}'VAR)&lt;>VarPrev ('{0,25}'VAR)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="4">
+            <ExpSyntax val="'סכום חיובי או 0 לנטרל'HEB"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="{0,34}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="6">
+            <ExpSyntax val="NOT ISNULL({0,34}) AND {0,34}&lt;> 0 AND NOT {0,37}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="Minute({0,41})&lt;>0 AND Minute({0,41})&lt;>30"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="8">
+            <ExpSyntax val="{0,44}"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="{0,45}&lt;>{32768,6}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="10">
+            <ExpSyntax val="{0,45}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="{0,47}"/>
+            <ExpAttribute val="T"/>
+          </Expression>
+          <Expression id="12">
+            <ExpSyntax val="{0,49}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+        </Expressions>
+        <VarRangeInfo Mode="F" VarRangeVeeIsn="1" id="1"/>
+        <VarRangeInfo Mode="T" VarRangeVeeIsn="1" id="2"/>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>
