@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="שינוי" ISN_2="1" LastIsn="1" id="5">
-          <LastModified _date="738657" _time="44917" date="17/05/2023" time="12:28:37"/>
+          <LastModified _date="738704" _time="49766" date="03/07/2023" time="13:49:26"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -109,50 +109,6 @@
                 </DATAVIEW_SRC>
               </LogicLine>
             </LogicLines>
-          </LogicUnit>
-          <LogicUnit id="3" propagate="78">
-            <Level val="T"/>
-            <Type val="P"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-            </Event>
-          </LogicUnit>
-          <LogicUnit id="4" propagate="78">
-            <Level val="T"/>
-            <Type val="S"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-            </Event>
-          </LogicUnit>
-          <LogicUnit id="5" propagate="78">
-            <Level val="R"/>
-            <Type val="P"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-            </Event>
-          </LogicUnit>
-          <LogicUnit id="6" propagate="78">
-            <Level val="R"/>
-            <Type val="S"/>
-            <Scope val="S"/>
-            <EngineDirective val="S"/>
-            <ShowMessage val="Y"/>
-            <Condition val="89"/>
-            <Event>
-              <EventType val="S"/>
-            </Event>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
