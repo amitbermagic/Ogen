@@ -13,8 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header ISEMPTY_TSK="1" ISN_2="1" LastIsn="1" id="33555754">
-          <LastModified date="00/00/0000" time="00:00:00"/>
+        <Header Description="סתם עוד תוכנית" ISN_2="1" LastIsn="1" id="33555754">
+          <LastModified _date="738710" _time="35623" date="09/07/2023" time="09:53:43"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -29,14 +29,25 @@
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
         </Header>
+        <ItemIsn val="2"/>
         <Resource>
-          <Columns/>
+          <Columns>
+            <Column id="33554433" name="PARK">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="1"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+          </Columns>
         </Resource>
         <Information>
           <Key>
             <Mode val="N"/>
           </Key>
-          <DB/>
+          <DB comp="-1"/>
           <Sort>
             <CLS val="A"/>
           </Sort>
@@ -108,15 +119,54 @@
                   <Direction val="C"/>
                 </DATAVIEW_SRC>
               </LogicLine>
+              <LogicLine>
+                <Select FieldID="33554433" FlowIsn="33554435" id="33554433">
+                  <Column val="33554433"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="1"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry id="1">
+          <FormEntry _last_isn="2" _last_test_id="2" id="1">
             <PropertyList model="FORM_GUI0">
+              <Model id="1"/>
               <_Comment id="218"/>
-              <FormName id="311"/>
+              <FormName id="311" valUnicode="סתם עוד תוכנית"/>
             </PropertyList>
+            <Control _test_id="1" id="33554433">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="33554433"/>
+                </Model>
+                <X id="21" val="277"/>
+                <Y id="22" val="8"/>
+                <Width id="23" val="8"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="33554433" id="43"/>
+                <ControlName id="46" val="PARK"/>
+                <TabOrder id="314" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="2" id="33554434">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="PARK:"/>
+                <X id="21" val="289"/>
+                <Y id="22" val="8"/>
+                <Width id="23" val="27"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+              </PropertyList>
+            </Control>
           </FormEntry>
         </TaskForms>
       </Task>
