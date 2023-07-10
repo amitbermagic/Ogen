@@ -14,7 +14,7 @@
     <Programs>
       <Task MainProgram="Y">
         <Header Description="תוכנית ראשית" ISN_2="1" LastIsn="18" id="1">
-          <LastModified _date="738655" _time="49465" date="15/05/2023" time="13:44:25"/>
+          <LastModified _date="738711" _time="29118" date="10/07/2023" time="08:05:18"/>
           <Comment val="30.12.2020 אסתי-UF_CalcLawnDepoit"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -5486,6 +5486,9 @@
                 <RightToLeft id="130" val="Y"/>
                 <SourceTable id="150"/>
                 <TabOrder id="314" val="4"/>
+                <_DisplayField id="443"/>
+                <_LinkField id="444"/>
+                <_Index id="445"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -5518,6 +5521,9 @@
                 <RightToLeft id="130" val="Y"/>
                 <SourceTable id="150"/>
                 <TabOrder id="314" val="3"/>
+                <_DisplayField id="443"/>
+                <_LinkField id="444"/>
+                <_Index id="445"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -5550,6 +5556,9 @@
                 <RightToLeft id="130" val="Y"/>
                 <SourceTable id="150"/>
                 <TabOrder id="314" val="5"/>
+                <_DisplayField id="443"/>
+                <_LinkField id="444"/>
+                <_Index id="445"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -5578,6 +5587,9 @@
                 <RightToLeft id="130" val="Y"/>
                 <SourceTable id="150"/>
                 <TabOrder id="314" val="6"/>
+                <_DisplayField id="443"/>
+                <_LinkField id="444"/>
+                <_Index id="445"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -5625,6 +5637,9 @@
                 <RightToLeft id="130" val="Y"/>
                 <SourceTable id="150"/>
                 <TabOrder id="314" val="7"/>
+                <_DisplayField id="443"/>
+                <_LinkField id="444"/>
+                <_Index id="445"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -5653,6 +5668,9 @@
                 <RightToLeft id="130" val="Y"/>
                 <SourceTable id="150"/>
                 <TabOrder id="314" val="8"/>
+                <_DisplayField id="443"/>
+                <_LinkField id="444"/>
+                <_Index id="445"/>
                 <Border id="452"/>
               </PropertyList>
             </Control>
@@ -6182,7 +6200,7 @@
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="137">
-            <ExpSyntax val="'גרסה 1.04.20i'HEB"/>
+            <ExpSyntax val="'גרסה 1.04.20j'HEB"/>
             <ExpAttribute val="A"/>
           </Expression>
           <Expression id="138">
