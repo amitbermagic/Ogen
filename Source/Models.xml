@@ -4,8 +4,8 @@
   <Header>
     <Version val="14090.00"/>
     <WithIsn val="Y"/>
-    <LastIsn val="59"/>
-    <LastIsnFolder val="2"/>
+    <LastIsn val="60"/>
+    <LastIsnFolder val="3"/>
     <Folders>
       <Folder id="1">
         <Name val="מדיה"/>
@@ -1441,6 +1441,14 @@
           <_Whole id="182" val="3"/>
           <_Negative id="192"/>
           <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object FolderIsn="1" id="134217785" name="מודל J">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
         </PropertyList>
       </Object>
     </Models>
